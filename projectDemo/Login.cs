@@ -24,7 +24,7 @@ namespace projectDemo
         {
             Employee ny = new Employee();
             this.Hide();
-          //  this.Close();
+            //  this.Close();
             ny.ShowDialog();
         }
 
@@ -126,20 +126,16 @@ namespace projectDemo
 
         private void CancelButton_Click(object sender, EventArgs e)
         {
-            HomePage HP = new HomePage();   
+            HomePage HP = new HomePage();
             HP.Show();
             this.Hide();
         }
 
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            ForgetPassword fg= new ForgetPassword();    
+            ForgetPassword fg = new ForgetPassword();
             fg.Show();
         }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+    
     }
 }
