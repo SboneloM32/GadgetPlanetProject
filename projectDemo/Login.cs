@@ -145,5 +145,10 @@ namespace projectDemo
             ForgetPassword fg= new ForgetPassword();    
             fg.Show();
         }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
