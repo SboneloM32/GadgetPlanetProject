@@ -123,15 +123,6 @@ namespace projectDemo
 
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void CancelButton_Click(object sender, EventArgs e)
         {
@@ -144,6 +135,11 @@ namespace projectDemo
         {
             ForgetPassword fg= new ForgetPassword();    
             fg.Show();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
