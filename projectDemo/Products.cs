@@ -152,16 +152,41 @@ namespace projectDemo
         private void HuaweiLaptopBtn_Click(object sender, EventArgs e)
         {
             double price= 12999.00;
+            String productName = label27.Text;
+           
+            int quantity = (int)numericUpDown1.Value;
+            double totalPrice = price * quantity;
+            MessageBox.Show("Total Price = R" + totalPrice.ToString("F2"));
+
+
+            AddToCart(productName, quantity, totalPrice);
+
         }
 
         private void MacBookBtn_Click(object sender, EventArgs e)
         {
-            double price = 5671.50;
+            double price = 18950.60;
+            String productName = label15.Text;
+       
+            int quantity = (int)numericUpDown1.Value;
+            double totalPrice = price * quantity;
+            MessageBox.Show("Total Price = R" + totalPrice.ToString("F2"));
+
+
+            AddToCart(productName, quantity, totalPrice);
         }
 
         private void AsusBtn_Click(object sender, EventArgs e)
         {
-            double price = 5671.50;
+            double price = 9200.81;
+            String productName = label16.Text;
+          
+            int quantity = (int)numericUpDown1.Value;
+            double totalPrice = price * quantity;
+            MessageBox.Show("Total Price = R" + totalPrice.ToString("F2"));
+
+
+            AddToCart(productName, quantity, totalPrice);
         }
 
         private void Iphone13Btn_Click(object sender, EventArgs e)
@@ -171,6 +196,11 @@ namespace projectDemo
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
         {
 
         }
