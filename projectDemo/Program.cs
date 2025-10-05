@@ -16,7 +16,7 @@ namespace projectDemo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HomePage());//Logins Sections
+            Application.Run(new Login());
         }
     }
 }
