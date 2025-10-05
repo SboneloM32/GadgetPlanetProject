@@ -171,7 +171,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "BuyingProduct";
-            this.Text = "BuyingProduct";
+            this.Text = "ViewProduct";
             this.Load += new System.EventHandler(this.BuyingProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();

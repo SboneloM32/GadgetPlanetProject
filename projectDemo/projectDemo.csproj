@@ -188,6 +188,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Sales.resx">
       <DependentUpon>Sales.cs</DependentUpon>
@@ -241,6 +242,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_Open.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show-password-icon-eye-symbol-vision-hide-from-watch-icon-secret-view-web-design-element-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye_Closed.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

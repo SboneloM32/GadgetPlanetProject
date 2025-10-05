@@ -100,6 +100,11 @@ namespace projectDemo
             this.employee1TableAdapter.Fill(this.ist2akDataSet1.Employee1);
 
 
+            // Set the initial state to hidden password (eye closed)
+          pictureBox2.Image = Properties.Resources.eye_Closed;  // Image of closed eye
+           textBox2.UseSystemPasswordChar = true;
+
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -142,22 +147,24 @@ namespace projectDemo
 
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton1.Checked)
-            {
-                textBox2.UseSystemPasswordChar = false;  
-            }
-            else
-            {
-                textBox2.UseSystemPasswordChar = true;  
-            }
-            
-        }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (textBox2.UseSystemPasswordChar)
+            {
+                textBox2.UseSystemPasswordChar = false;
+                pictureBox2.Image = Properties.Resources.eye_Open; // Image of open eye
+            }
+            else
+            {
+                textBox2.UseSystemPasswordChar = true;
+                pictureBox2.Image = Properties.Resources.eye_Closed; // Image of closed eye
+            }
         }
     }
 }
