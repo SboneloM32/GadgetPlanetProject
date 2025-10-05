@@ -168,12 +168,12 @@
             this.addProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewSalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xxxxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label18 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.employee1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ist2akDataSet1 = new projectDemo.ist2akDataSet1();
             this.employee1TableAdapter = new projectDemo.ist2akDataSet1TableAdapters.Employee1TableAdapter();
-            this.xxxxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LaptopGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
@@ -1634,9 +1634,15 @@
             // viewSalesToolStripMenuItem
             // 
             this.viewSalesToolStripMenuItem.Name = "viewSalesToolStripMenuItem";
-            this.viewSalesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewSalesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.viewSalesToolStripMenuItem.Text = "View Sales";
             this.viewSalesToolStripMenuItem.Click += new System.EventHandler(this.viewSalesToolStripMenuItem_Click);
+            // 
+            // xxxxToolStripMenuItem
+            // 
+            this.xxxxToolStripMenuItem.Name = "xxxxToolStripMenuItem";
+            this.xxxxToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.xxxxToolStripMenuItem.Text = "xxxx";
             // 
             // label18
             // 
@@ -1670,12 +1676,6 @@
             // employee1TableAdapter
             // 
             this.employee1TableAdapter.ClearBeforeFill = true;
-            // 
-            // xxxxToolStripMenuItem
-            // 
-            this.xxxxToolStripMenuItem.Name = "xxxxToolStripMenuItem";
-            this.xxxxToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.xxxxToolStripMenuItem.Text = "xxxx";
             // 
             // Products
             // 

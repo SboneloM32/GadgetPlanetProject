@@ -33,15 +33,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.employee1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ist2akDataSet1 = new projectDemo.ist2akDataSet1();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.employee1TableAdapter1 = new projectDemo.ist2akDataSet1TableAdapters.Employee1TableAdapter();
             this.button2 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.employee1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ist2akDataSet1 = new projectDemo.ist2akDataSet1();
+            this.employee1TableAdapter1 = new projectDemo.ist2akDataSet1TableAdapters.Employee1TableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.employee1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ist2akDataSet1)).BeginInit();
             this.SuspendLayout();
@@ -82,16 +83,6 @@
             this.textBox1.Size = new System.Drawing.Size(166, 20);
             this.textBox1.TabIndex = 3;
             // 
-            // employee1BindingSource
-            // 
-            this.employee1BindingSource.DataMember = "Employee1";
-            this.employee1BindingSource.DataSource = this.ist2akDataSet1;
-            // 
-            // ist2akDataSet1
-            // 
-            this.ist2akDataSet1.DataSetName = "ist2akDataSet1";
-            this.ist2akDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // textBox2
             // 
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employee1BindingSource, "Emp_Email", true));
@@ -123,6 +114,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employee1BindingSource, "Emp_Password", true));
             this.textBox4.Location = new System.Drawing.Point(344, 251);
             this.textBox4.Name = "textBox4";
@@ -140,16 +132,12 @@
             this.label4.Text = "Enter a new Password";
             this.label4.Visible = false;
             // 
-            // employee1TableAdapter1
-            // 
-            this.employee1TableAdapter1.ClearBeforeFill = true;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(357, 316);
+            this.button2.Location = new System.Drawing.Point(369, 314);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 9;
@@ -158,12 +146,37 @@
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(475, 251);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(312, 40);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "*Password must be between 8 and 12 characters.Use at least one uppercase, one low" +
+    "ercase, one number, and one symbol.";
+            this.label5.Visible = false;
+            // 
+            // employee1BindingSource
+            // 
+            this.employee1BindingSource.DataMember = "Employee1";
+            this.employee1BindingSource.DataSource = this.ist2akDataSet1;
+            // 
+            // ist2akDataSet1
+            // 
+            this.ist2akDataSet1.DataSetName = "ist2akDataSet1";
+            this.ist2akDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // employee1TableAdapter1
+            // 
+            this.employee1TableAdapter1.ClearBeforeFill = true;
+            // 
             // ForgetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(796, 458);
+            this.ClientSize = new System.Drawing.Size(868, 458);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox4);
@@ -199,5 +212,6 @@
         private System.Windows.Forms.Button button2;
         private ist2akDataSet1 ist2akDataSet1;
         private System.Windows.Forms.BindingSource employee1BindingSource;
+        private System.Windows.Forms.Label label5;
     }
 }
