@@ -429,8 +429,7 @@ namespace projectDemo
 
         private void addNewSaleToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddSale addSale = new AddSale();
-            addSale.Show();
+         
         }
 
         private void viewProductsToolStripMenuItem_Click(object sender, EventArgs e)

@@ -74,17 +74,17 @@
     <Compile Include="AddEmployee.Designer.cs">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddSale.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddSale.Designer.cs">
-      <DependentUpon>AddSale.cs</DependentUpon>
-    </Compile>
     <Compile Include="BuyingProduct.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BuyingProduct.Designer.cs">
       <DependentUpon>BuyingProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CartVerified.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CartVerified.Designer.cs">
+      <DependentUpon>CartVerified.cs</DependentUpon>
     </Compile>
     <Compile Include="Customer.cs">
       <SubType>Form</SubType>
@@ -156,11 +156,11 @@
     <EmbeddedResource Include="AddEmployee.resx">
       <DependentUpon>AddEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddSale.resx">
-      <DependentUpon>AddSale.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BuyingProduct.resx">
       <DependentUpon>BuyingProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CartVerified.resx">
+      <DependentUpon>CartVerified.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
