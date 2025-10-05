@@ -104,16 +104,21 @@ namespace projectDemo
 
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            decimal total = CalculateTotalPrice();   // get total from cart
+        private void button1_Click_1(object sender, EventArgs e) {
+            String proceedChecker = textBox1.Text;
 
+            if (string.IsNullOrEmpty(proceedChecker))
+            {
+                MessageBox.Show("Click Total Amount to Proceed");
+            }
+            else
+            {
 
-            // pass total to CartVerified
-
-            CartVerified nv = new CartVerified();
-            nv.SetTotalAmount(total);
-            nv.Show();
+                decimal total = CalculateTotalPrice();
+                CartVerified nv = new CartVerified();
+                nv.SetTotalAmount(total);
+                nv.Show();
+            }
         }
     }
 }
