@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace projectDemo
 {
@@ -47,6 +48,27 @@ namespace projectDemo
             this.Hide();
             pp.Show();//
             // comment ch
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string customerID = textBox1.Text.Trim();
+            
+            if (string.IsNullOrEmpty(customerID))
+            {
+                MessageBox.Show("Please enter customerID!");
+            }
+            else
+            {
+                if (!customerID.All(char.IsDigit))
+                {
+                    MessageBox.Show("Input must contain only digits!");
+                }
+                else
+                {
+                    customerBindingSource.Filter = "CustomerID = '" + customerID + " '";
+                }
+            }  
         }
     }
 }

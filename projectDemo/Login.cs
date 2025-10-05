@@ -141,5 +141,23 @@ namespace projectDemo
         {
 
         }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                textBox2.UseSystemPasswordChar = false;  
+            }
+            else
+            {
+                textBox2.UseSystemPasswordChar = true;  
+            }
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

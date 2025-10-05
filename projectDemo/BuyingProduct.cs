@@ -24,5 +24,25 @@ namespace projectDemo
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string productID = textBox1.Text.Trim();
+
+            if (string.IsNullOrEmpty(productID))
+            {
+                MessageBox.Show("Please enter customerID!");
+            }
+            else
+            {
+                if (!productID.All(char.IsDigit))
+                {
+                    MessageBox.Show("Input must contain only digits!");
+                }
+                else
+                {
+                    productBindingSource.Filter = "ProductID = '" + productID + " '";
+                }
+            }
+        }
     }
 }

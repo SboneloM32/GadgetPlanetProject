@@ -47,5 +47,26 @@ namespace projectDemo
             this.tableAdapterManager2.UpdateAll(this.ist2akDataSet1);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string employeeID = textBox1.Text.Trim();
+
+            if (string.IsNullOrEmpty(employeeID))
+            {
+                MessageBox.Show("Please enter employeeID!");
+            }
+            else
+            {
+                if (!employeeID.All(char.IsDigit))
+                {
+                    MessageBox.Show("Input must contain only digits!");
+                }
+                else
+                {
+                    employee1BindingSource.Filter = "EmployeeID = '" + employeeID + " '";
+                }
+            }
+        }
     }
 }
