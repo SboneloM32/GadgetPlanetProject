@@ -40,8 +40,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.employee1TableAdapter1 = new projectDemo.ist2akDataSet1TableAdapters.Employee1TableAdapter();
             this.button2 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.employee1TableAdapter1 = new projectDemo.ist2akDataSet1TableAdapters.Employee1TableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.employee1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ist2akDataSet1)).BeginInit();
             this.SuspendLayout();
@@ -123,6 +124,7 @@
             // 
             // textBox4
             // 
+            this.textBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox4.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employee1BindingSource, "Emp_Password", true));
             this.textBox4.Location = new System.Drawing.Point(344, 251);
             this.textBox4.Name = "textBox4";
@@ -140,16 +142,12 @@
             this.label4.Text = "Enter a new Password";
             this.label4.Visible = false;
             // 
-            // employee1TableAdapter1
-            // 
-            this.employee1TableAdapter1.ClearBeforeFill = true;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(357, 316);
+            this.button2.Location = new System.Drawing.Point(369, 314);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 9;
@@ -158,12 +156,27 @@
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label5
+            // 
+            this.label5.Location = new System.Drawing.Point(475, 251);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(312, 40);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "*Password must be between 8 and 12 characters.Use at least one uppercase, one low" +
+    "ercase, one number, and one symbol.";
+            this.label5.Visible = false;
+            // 
+            // employee1TableAdapter1
+            // 
+            this.employee1TableAdapter1.ClearBeforeFill = true;
+            // 
             // ForgetPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(796, 458);
+            this.ClientSize = new System.Drawing.Size(868, 458);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox4);
@@ -175,7 +188,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ForgetPassword";
-            this.Text = "ForgetPassword";
+            this.Text = " v ";
             this.Load += new System.EventHandler(this.ForgetPassword_Load);
             ((System.ComponentModel.ISupportInitialize)(this.employee1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ist2akDataSet1)).EndInit();
@@ -199,5 +212,6 @@
         private System.Windows.Forms.Button button2;
         private ist2akDataSet1 ist2akDataSet1;
         private System.Windows.Forms.BindingSource employee1BindingSource;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -35,7 +35,6 @@
             this.employee1TableAdapter = new projectDemo.ist2akDataSet1TableAdapters.Employee1TableAdapter();
             this.tableAdapterManager = new projectDemo.ist2akDataSet1TableAdapters.TableAdapterManager();
             this.customerTableAdapter1 = new projectDemo.ist2akDataSetTableAdapters.CustomerTableAdapter();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -77,36 +76,23 @@
             // 
             this.customerTableAdapter1.ClearBeforeFill = true;
             // 
-            // linkLabel1
-            // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel1.Location = new System.Drawing.Point(656, 456);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(153, 20);
-            this.linkLabel1.TabIndex = 0;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Create new Account";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
             // textBox1
             // 
             this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.employee1BindingSource, "Emp_UserName", true));
-            this.textBox1.Location = new System.Drawing.Point(569, 220);
+            this.textBox1.Location = new System.Drawing.Point(557, 214);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(221, 26);
+            this.textBox1.Size = new System.Drawing.Size(227, 26);
             this.textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
             this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.employee1BindingSource, "Emp_Password", true));
-            this.textBox2.Location = new System.Drawing.Point(569, 267);
+            this.textBox2.Location = new System.Drawing.Point(557, 261);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(221, 26);
+            this.textBox2.Size = new System.Drawing.Size(227, 26);
             this.textBox2.TabIndex = 3;
             this.textBox2.UseSystemPasswordChar = true;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -137,7 +123,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Malgun Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.FloralWhite;
-            this.button1.Location = new System.Drawing.Point(500, 345);
+            this.button1.Location = new System.Drawing.Point(557, 330);
             this.button1.Name = "button1";
             this.button1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.button1.Size = new System.Drawing.Size(90, 36);
@@ -164,7 +150,7 @@
             this.linkLabel4.AutoSize = true;
             this.linkLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel4.LinkColor = System.Drawing.Color.Red;
-            this.linkLabel4.Location = new System.Drawing.Point(496, 456);
+            this.linkLabel4.Location = new System.Drawing.Point(655, 418);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(129, 20);
             this.linkLabel4.TabIndex = 12;
@@ -178,7 +164,7 @@
             this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelButton.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CancelButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CancelButton.Location = new System.Drawing.Point(660, 345);
+            this.CancelButton.Location = new System.Drawing.Point(688, 330);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(96, 36);
             this.CancelButton.TabIndex = 13;
@@ -195,7 +181,6 @@
             this.ClientSize = new System.Drawing.Size(1251, 614);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.CancelButton);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
@@ -219,7 +204,6 @@
         private ist2akDataSet1TableAdapters.Employee1TableAdapter employee1TableAdapter;
         private ist2akDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
         private ist2akDataSetTableAdapters.CustomerTableAdapter customerTableAdapter1;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
