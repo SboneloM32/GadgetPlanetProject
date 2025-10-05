@@ -3277,11 +3277,10 @@ SELECT CustomerID, Cust_FName, Cust_LName, Cust_Address, Cust_PhoneNumber, Cust_
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
             this._commandCollection[1].CommandText = @"INSERT INTO Customer
-                         (CustomerID, Cust_FName, Cust_LName, Cust_Address, Cust_PhoneNumber, Cust_Email, Cust_UserName, Cust_Password, Payment_Method)
-VALUES        (@CustomerID,@Cust_FName,@Cust_LName,@Cust_Address,@Cust_PhoneNumber,@Cust_Email,@Cust_UserName,@Cust_Password,@Payment_Method); 
-SELECT CustomerID, Cust_FName, Cust_LName, Cust_Address, Cust_PhoneNumber, Cust_Email, Cust_UserName, Cust_Password, Payment_Method FROM Customer WHERE (CustomerID = @CustomerID)";
+                         (Cust_FName, Cust_LName, Cust_Address, Cust_PhoneNumber, Cust_Email, Cust_UserName, Cust_Password, Payment_Method)
+VALUES        (@Cust_FName,@Cust_LName,@Cust_Address,@Cust_PhoneNumber,@Cust_Email,@Cust_UserName,@Cust_Password,@Payment_Method); 
+";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CustomerID", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "CustomerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cust_FName", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Cust_FName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cust_LName", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Cust_LName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cust_Address", global::System.Data.SqlDbType.VarChar, 90, global::System.Data.ParameterDirection.Input, 0, 0, "Cust_Address", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -3671,61 +3670,55 @@ SELECT CustomerID, Cust_FName, Cust_LName, Cust_Address, Cust_PhoneNumber, Cust_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsertQuery(string CustomerID, string Cust_FName, string Cust_LName, string Cust_Address, string Cust_PhoneNumber, string Cust_Email, string Cust_UserName, string Cust_Password, string Payment_Method) {
+        public virtual int InsertQuery(string Cust_FName, string Cust_LName, string Cust_Address, string Cust_PhoneNumber, string Cust_Email, string Cust_UserName, string Cust_Password, string Payment_Method) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
-            if ((CustomerID == null)) {
-                throw new global::System.ArgumentNullException("CustomerID");
-            }
-            else {
-                command.Parameters[0].Value = ((string)(CustomerID));
-            }
             if ((Cust_FName == null)) {
                 throw new global::System.ArgumentNullException("Cust_FName");
             }
             else {
-                command.Parameters[1].Value = ((string)(Cust_FName));
+                command.Parameters[0].Value = ((string)(Cust_FName));
             }
             if ((Cust_LName == null)) {
                 throw new global::System.ArgumentNullException("Cust_LName");
             }
             else {
-                command.Parameters[2].Value = ((string)(Cust_LName));
+                command.Parameters[1].Value = ((string)(Cust_LName));
             }
             if ((Cust_Address == null)) {
                 throw new global::System.ArgumentNullException("Cust_Address");
             }
             else {
-                command.Parameters[3].Value = ((string)(Cust_Address));
+                command.Parameters[2].Value = ((string)(Cust_Address));
             }
             if ((Cust_PhoneNumber == null)) {
                 throw new global::System.ArgumentNullException("Cust_PhoneNumber");
             }
             else {
-                command.Parameters[4].Value = ((string)(Cust_PhoneNumber));
+                command.Parameters[3].Value = ((string)(Cust_PhoneNumber));
             }
             if ((Cust_Email == null)) {
                 throw new global::System.ArgumentNullException("Cust_Email");
             }
             else {
-                command.Parameters[5].Value = ((string)(Cust_Email));
+                command.Parameters[4].Value = ((string)(Cust_Email));
             }
             if ((Cust_UserName == null)) {
                 throw new global::System.ArgumentNullException("Cust_UserName");
             }
             else {
-                command.Parameters[6].Value = ((string)(Cust_UserName));
+                command.Parameters[5].Value = ((string)(Cust_UserName));
             }
             if ((Cust_Password == null)) {
                 throw new global::System.ArgumentNullException("Cust_Password");
             }
             else {
-                command.Parameters[7].Value = ((string)(Cust_Password));
+                command.Parameters[6].Value = ((string)(Cust_Password));
             }
             if ((Payment_Method == null)) {
                 throw new global::System.ArgumentNullException("Payment_Method");
             }
             else {
-                command.Parameters[8].Value = ((string)(Payment_Method));
+                command.Parameters[7].Value = ((string)(Payment_Method));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -3963,11 +3956,10 @@ SELECT EmployeeID, Emp_FName, Emp_LName, Emp_DOB, Emp_PhoneNumber, Emp_Position,
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
             this._commandCollection[1].CommandText = @"INSERT INTO Employee1
-                         (EmployeeID, Emp_FName, Emp_LName, Emp_DOB, Emp_PhoneNumber, Emp_Position, Emp_Address, Emp_Email, Emp_HireDate, Emp_Status, Emp_UserName, Emp_Password)
-VALUES        (@EmployeeID,@Emp_FName,@Emp_LName,@Emp_DOB,@Emp_PhoneNumber,@Emp_Position,@Emp_Address,@Emp_Email,@Emp_HireDate,@Emp_Status,@Emp_UserName,@Emp_Password); 
-SELECT EmployeeID, Emp_FName, Emp_LName, Emp_DOB, Emp_PhoneNumber, Emp_Position, Emp_Address, Emp_Email, Emp_HireDate, Emp_Status, Emp_UserName, Emp_Password FROM Employee1 WHERE (EmployeeID = @EmployeeID)";
+                         (Emp_FName, Emp_LName, Emp_DOB, Emp_PhoneNumber, Emp_Position, Emp_Address, Emp_Email, Emp_HireDate, Emp_Status, Emp_UserName, Emp_Password)
+VALUES        (@Emp_FName,@Emp_LName,@Emp_DOB,@Emp_PhoneNumber,@Emp_Position,@Emp_Address,@Emp_Email,@Emp_HireDate,@Emp_Status,@Emp_UserName,@Emp_Password); 
+";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EmployeeID", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Emp_FName", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Emp_FName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Emp_LName", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "Emp_LName", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Emp_DOB", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 0, 0, "Emp_DOB", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -4411,79 +4403,73 @@ SELECT EmployeeID, Emp_FName, Emp_LName, Emp_DOB, Emp_PhoneNumber, Emp_Position,
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsertQuery1(string EmployeeID, string Emp_FName, string Emp_LName, string Emp_DOB, string Emp_PhoneNumber, string Emp_Position, string Emp_Address, string Emp_Email, string Emp_HireDate, string Emp_Status, string Emp_UserName, string Emp_Password) {
+        public virtual int InsertQuery(string Emp_FName, string Emp_LName, string Emp_DOB, string Emp_PhoneNumber, string Emp_Position, string Emp_Address, string Emp_Email, string Emp_HireDate, string Emp_Status, string Emp_UserName, string Emp_Password) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
-            if ((EmployeeID == null)) {
-                throw new global::System.ArgumentNullException("EmployeeID");
-            }
-            else {
-                command.Parameters[0].Value = ((string)(EmployeeID));
-            }
             if ((Emp_FName == null)) {
                 throw new global::System.ArgumentNullException("Emp_FName");
             }
             else {
-                command.Parameters[1].Value = ((string)(Emp_FName));
+                command.Parameters[0].Value = ((string)(Emp_FName));
             }
             if ((Emp_LName == null)) {
                 throw new global::System.ArgumentNullException("Emp_LName");
             }
             else {
-                command.Parameters[2].Value = ((string)(Emp_LName));
+                command.Parameters[1].Value = ((string)(Emp_LName));
             }
             if ((Emp_DOB == null)) {
                 throw new global::System.ArgumentNullException("Emp_DOB");
             }
             else {
-                command.Parameters[3].Value = ((string)(Emp_DOB));
+                command.Parameters[2].Value = ((string)(Emp_DOB));
             }
             if ((Emp_PhoneNumber == null)) {
                 throw new global::System.ArgumentNullException("Emp_PhoneNumber");
             }
             else {
-                command.Parameters[4].Value = ((string)(Emp_PhoneNumber));
+                command.Parameters[3].Value = ((string)(Emp_PhoneNumber));
             }
             if ((Emp_Position == null)) {
                 throw new global::System.ArgumentNullException("Emp_Position");
             }
             else {
-                command.Parameters[5].Value = ((string)(Emp_Position));
+                command.Parameters[4].Value = ((string)(Emp_Position));
             }
             if ((Emp_Address == null)) {
                 throw new global::System.ArgumentNullException("Emp_Address");
             }
             else {
-                command.Parameters[6].Value = ((string)(Emp_Address));
+                command.Parameters[5].Value = ((string)(Emp_Address));
             }
             if ((Emp_Email == null)) {
                 throw new global::System.ArgumentNullException("Emp_Email");
             }
             else {
-                command.Parameters[7].Value = ((string)(Emp_Email));
+                command.Parameters[6].Value = ((string)(Emp_Email));
             }
             if ((Emp_HireDate == null)) {
                 throw new global::System.ArgumentNullException("Emp_HireDate");
             }
             else {
-                command.Parameters[8].Value = ((string)(Emp_HireDate));
+                command.Parameters[7].Value = ((string)(Emp_HireDate));
             }
             if ((Emp_Status == null)) {
                 throw new global::System.ArgumentNullException("Emp_Status");
             }
             else {
-                command.Parameters[9].Value = ((string)(Emp_Status));
+                command.Parameters[8].Value = ((string)(Emp_Status));
             }
             if ((Emp_UserName == null)) {
                 throw new global::System.ArgumentNullException("Emp_UserName");
             }
             else {
-                command.Parameters[10].Value = ((string)(Emp_UserName));
+                command.Parameters[9].Value = ((string)(Emp_UserName));
             }
             if ((Emp_Password == null)) {
                 throw new global::System.ArgumentNullException("Emp_Password");
             }
             else {
-                command.Parameters[11].Value = ((string)(Emp_Password));
+                command.Parameters[10].Value = ((string)(Emp_Password));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5224,16 +5210,14 @@ SELECT SaleID, Sale_Date, Sale_TotalAmount, CustomerID, EmployeeID, PaymentMetho
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"INSERT INTO Sale
-                         (SaleID, Sale_Date, Sale_TotalAmount, CustomerID, EmployeeID, PaymentMethod)
-VALUES        (@SaleID,@Sale_Date,@Sale_TotalAmount,@CustomerID,@EmployeeID,@PaymentMethod); 
-SELECT SaleID, Sale_Date, Sale_TotalAmount, CustomerID, EmployeeID, PaymentMethod FROM Sale WHERE (SaleID = @SaleID)";
+            this._commandCollection[1].CommandText = "INSERT INTO Sale\r\n                         (Sale_Date, Sale_TotalAmount, Customer" +
+                "ID, EmployeeID, PaymentMethod)\r\nVALUES        (@Sale_Date,@Sale_TotalAmount,@Cus" +
+                "tomerID,@EmployeeID,@PaymentMethod); \r\n";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SaleID", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "SaleID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sale_Date", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 0, 0, "Sale_Date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sale_TotalAmount", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 10, 2, "Sale_TotalAmount", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CustomerID", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "CustomerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EmployeeID", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CustomerID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "CustomerID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@EmployeeID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "EmployeeID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PaymentMethod", global::System.Data.SqlDbType.VarChar, 40, global::System.Data.ParameterDirection.Input, 0, 0, "PaymentMethod", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -5469,38 +5453,22 @@ SELECT SaleID, Sale_Date, Sale_TotalAmount, CustomerID, EmployeeID, PaymentMetho
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsertQuery(string SaleID, string Sale_Date, decimal Sale_TotalAmount, string CustomerID, string EmployeeID, string PaymentMethod) {
+        public virtual int InsertQuery(string Sale_Date, decimal Sale_TotalAmount, int CustomerID, int EmployeeID, string PaymentMethod) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
-            if ((SaleID == null)) {
-                throw new global::System.ArgumentNullException("SaleID");
-            }
-            else {
-                command.Parameters[0].Value = ((string)(SaleID));
-            }
             if ((Sale_Date == null)) {
                 throw new global::System.ArgumentNullException("Sale_Date");
             }
             else {
-                command.Parameters[1].Value = ((string)(Sale_Date));
+                command.Parameters[0].Value = ((string)(Sale_Date));
             }
-            command.Parameters[2].Value = ((decimal)(Sale_TotalAmount));
-            if ((CustomerID == null)) {
-                throw new global::System.ArgumentNullException("CustomerID");
-            }
-            else {
-                command.Parameters[3].Value = ((string)(CustomerID));
-            }
-            if ((EmployeeID == null)) {
-                throw new global::System.ArgumentNullException("EmployeeID");
-            }
-            else {
-                command.Parameters[4].Value = ((string)(EmployeeID));
-            }
+            command.Parameters[1].Value = ((decimal)(Sale_TotalAmount));
+            command.Parameters[2].Value = ((int)(CustomerID));
+            command.Parameters[3].Value = ((int)(EmployeeID));
             if ((PaymentMethod == null)) {
                 throw new global::System.ArgumentNullException("PaymentMethod");
             }
             else {
-                command.Parameters[5].Value = ((string)(PaymentMethod));
+                command.Parameters[4].Value = ((string)(PaymentMethod));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 

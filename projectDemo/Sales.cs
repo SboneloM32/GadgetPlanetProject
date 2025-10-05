@@ -24,14 +24,5 @@ namespace projectDemo
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-            string text = textBox3.Text;
-            decimal parsedValue = Convert.ToDecimal(text);
-
-            saleTableAdapter.InsertQuery(textBox1.Text, maskedTextBox1.Text, parsedValue, textBox4.Text, textBox5.Text, comboBox1.Text);
-            saleTableAdapter.Fill(this.ist2akDataSet1.Sale);
-        }
     }
 }

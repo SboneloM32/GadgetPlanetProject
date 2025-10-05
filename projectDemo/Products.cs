@@ -407,5 +407,36 @@ namespace projectDemo
         {
 
         }
+
+        private void viewEmployeesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Employee employee = new Employee();
+            employee.Show();
+        }
+
+        private void addNewEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddEmployee addEmployee = new AddEmployee();
+            addEmployee.Show();
+        }
+
+        private void addNewCustomerToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AddCustomer addCustomer = new AddCustomer();
+            this.Hide();
+            addCustomer.Show();
+        }
+
+        private void addNewSaleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddSale addSale = new AddSale();
+            addSale.Show();
+        }
+
+        private void viewProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BuyingProduct buyingProduct = new BuyingProduct();
+            buyingProduct.Show();
+        }
     }
 }

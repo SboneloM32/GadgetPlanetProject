@@ -24,13 +24,5 @@ namespace projectDemo
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string text = textBox2.Text;
-            decimal num3 = decimal.Parse(text);
-
-            productTableAdapter.InsertQuery(textBox2.Text, num3, int.Parse(textBox3.Text), textBox4.Text, textBox5.Text, textBox6.Text);
-            productTableAdapter.Fill(this.ist2akDataSet1.Product);
-        }
     }
 }

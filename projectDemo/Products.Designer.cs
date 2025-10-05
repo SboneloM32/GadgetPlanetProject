@@ -58,6 +58,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.hpLaptopBtn = new System.Windows.Forms.Button();
             this.MDeviceGroupBox = new System.Windows.Forms.GroupBox();
+            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown16 = new System.Windows.Forms.NumericUpDown();
@@ -167,10 +168,14 @@
             this.viewSalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label18 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
+            this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewEmployeesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewSaleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewCustomerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.employee1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ist2akDataSet1 = new projectDemo.ist2akDataSet1();
             this.employee1TableAdapter = new projectDemo.ist2akDataSet1TableAdapters.Employee1TableAdapter();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
             this.LaptopGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
@@ -183,6 +188,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.MDeviceGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
@@ -224,7 +230,6 @@
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employee1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ist2akDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             this.SuspendLayout();
             // 
             // LaptopGroupBox
@@ -641,6 +646,24 @@
             this.MDeviceGroupBox.TabIndex = 5;
             this.MDeviceGroupBox.TabStop = false;
             this.MDeviceGroupBox.Text = "Mobile Devices";
+            // 
+            // numericUpDown11
+            // 
+            this.numericUpDown11.Location = new System.Drawing.Point(1167, 186);
+            this.numericUpDown11.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown11.Name = "numericUpDown11";
+            this.numericUpDown11.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDown11.TabIndex = 68;
+            this.numericUpDown11.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown11.ValueChanged += new System.EventHandler(this.numericUpDown11_ValueChanged);
             // 
             // numericUpDown18
             // 
@@ -1810,7 +1833,8 @@
             this.allProductsToolStripMenuItem,
             this.addNewCustomerToolStripMenuItem,
             this.productsToolStripMenuItem,
-            this.salesToolStripMenuItem});
+            this.salesToolStripMenuItem,
+            this.employeeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1455, 24);
@@ -1827,7 +1851,8 @@
             // addNewCustomerToolStripMenuItem
             // 
             this.addNewCustomerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewCustomersToolStripMenuItem});
+            this.viewCustomersToolStripMenuItem,
+            this.addNewCustomerToolStripMenuItem1});
             this.addNewCustomerToolStripMenuItem.Name = "addNewCustomerToolStripMenuItem";
             this.addNewCustomerToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.addNewCustomerToolStripMenuItem.Text = " Customers";
@@ -1835,8 +1860,8 @@
             // viewCustomersToolStripMenuItem
             // 
             this.viewCustomersToolStripMenuItem.Name = "viewCustomersToolStripMenuItem";
-            this.viewCustomersToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.viewCustomersToolStripMenuItem.Text = " Customer Registration";
+            this.viewCustomersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewCustomersToolStripMenuItem.Text = "View Customers";
             this.viewCustomersToolStripMenuItem.Click += new System.EventHandler(this.viewCustomersToolStripMenuItem_Click);
             // 
             // productsToolStripMenuItem
@@ -1851,13 +1876,15 @@
             // viewProductsToolStripMenuItem
             // 
             this.viewProductsToolStripMenuItem.Name = "viewProductsToolStripMenuItem";
-            this.viewProductsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
-            this.viewProductsToolStripMenuItem.Text = "Products Registration";
+            this.viewProductsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewProductsToolStripMenuItem.Text = "View Products";
+            this.viewProductsToolStripMenuItem.Click += new System.EventHandler(this.viewProductsToolStripMenuItem_Click);
             // 
             // salesToolStripMenuItem
             // 
             this.salesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewSalesToolStripMenuItem});
+            this.viewSalesToolStripMenuItem,
+            this.addNewSaleToolStripMenuItem});
             this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
             this.salesToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.salesToolStripMenuItem.Text = "Sales";
@@ -1866,7 +1893,7 @@
             // viewSalesToolStripMenuItem
             // 
             this.viewSalesToolStripMenuItem.Name = "viewSalesToolStripMenuItem";
-            this.viewSalesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+            this.viewSalesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewSalesToolStripMenuItem.Text = "View Sales";
             this.viewSalesToolStripMenuItem.Click += new System.EventHandler(this.viewSalesToolStripMenuItem_Click);
             // 
@@ -1889,6 +1916,43 @@
             this.label28.Size = new System.Drawing.Size(0, 18);
             this.label28.TabIndex = 22;
             // 
+            // employeeToolStripMenuItem
+            // 
+            this.employeeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewEmployeesToolStripMenuItem,
+            this.addNewEmployeeToolStripMenuItem});
+            this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
+            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.employeeToolStripMenuItem.Text = "Employee";
+            // 
+            // viewEmployeesToolStripMenuItem
+            // 
+            this.viewEmployeesToolStripMenuItem.Name = "viewEmployeesToolStripMenuItem";
+            this.viewEmployeesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewEmployeesToolStripMenuItem.Text = "View Employees";
+            this.viewEmployeesToolStripMenuItem.Click += new System.EventHandler(this.viewEmployeesToolStripMenuItem_Click);
+            // 
+            // addNewEmployeeToolStripMenuItem
+            // 
+            this.addNewEmployeeToolStripMenuItem.Name = "addNewEmployeeToolStripMenuItem";
+            this.addNewEmployeeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewEmployeeToolStripMenuItem.Text = "Add new Employee";
+            this.addNewEmployeeToolStripMenuItem.Click += new System.EventHandler(this.addNewEmployeeToolStripMenuItem_Click);
+            // 
+            // addNewSaleToolStripMenuItem
+            // 
+            this.addNewSaleToolStripMenuItem.Name = "addNewSaleToolStripMenuItem";
+            this.addNewSaleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewSaleToolStripMenuItem.Text = "Add new Sale";
+            this.addNewSaleToolStripMenuItem.Click += new System.EventHandler(this.addNewSaleToolStripMenuItem_Click);
+            // 
+            // addNewCustomerToolStripMenuItem1
+            // 
+            this.addNewCustomerToolStripMenuItem1.Name = "addNewCustomerToolStripMenuItem1";
+            this.addNewCustomerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.addNewCustomerToolStripMenuItem1.Text = "Add new Customer";
+            this.addNewCustomerToolStripMenuItem1.Click += new System.EventHandler(this.addNewCustomerToolStripMenuItem1_Click);
+            // 
             // employee1BindingSource
             // 
             this.employee1BindingSource.DataMember = "Employee1";
@@ -1902,24 +1966,6 @@
             // employee1TableAdapter
             // 
             this.employee1TableAdapter.ClearBeforeFill = true;
-            // 
-            // numericUpDown11
-            // 
-            this.numericUpDown11.Location = new System.Drawing.Point(1167, 186);
-            this.numericUpDown11.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(54, 20);
-            this.numericUpDown11.TabIndex = 68;
-            this.numericUpDown11.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown11.ValueChanged += new System.EventHandler(this.numericUpDown11_ValueChanged);
             // 
             // Products
             // 
@@ -1953,6 +1999,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.MDeviceGroupBox.ResumeLayout(false);
             this.MDeviceGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
@@ -1996,7 +2043,6 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employee1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ist2akDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2145,5 +2191,10 @@
         private System.Windows.Forms.NumericUpDown numericUpDown23;
         private System.Windows.Forms.NumericUpDown numericUpDown22;
         private System.Windows.Forms.NumericUpDown numericUpDown11;
+        private System.Windows.Forms.ToolStripMenuItem addNewSaleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem employeeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewEmployeesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewEmployeeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewCustomerToolStripMenuItem1;
     }
 }

@@ -41,13 +41,6 @@ namespace projectDemo
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            customerTableAdapter.InsertQuery(textBox1.Text,textBox2.Text,textBox3.Text,textBox4.Text,textBox5.Text,textBox6.Text,textBox7.Text,textBox8.Text,textBox9.Text);
-            customerTableAdapter.Fill(ist2akDataSet1.Customer);
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             Products pp = new Products();

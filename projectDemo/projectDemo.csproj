@@ -62,6 +62,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSale.Designer.cs">
+      <DependentUpon>AddSale.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuyingProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +150,15 @@
     <Compile Include="View Cart.Designer.cs">
       <DependentUpon>View Cart.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmployee.resx">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSale.resx">
+      <DependentUpon>AddSale.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuyingProduct.resx">
       <DependentUpon>BuyingProduct.cs</DependentUpon>
     </EmbeddedResource>

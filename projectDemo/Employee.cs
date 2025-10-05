@@ -40,26 +40,6 @@ namespace projectDemo
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-            try
-            {
-                employee1TableAdapter.InsertQuery1(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox8.Text, textBox9.Text, textBox10.Text, textBox11.Text, textBox12.Text,textBox7.Text);
-
-                employee1TableAdapter.Fill(ist2akDataSet1.Employee1);
-
-            }
-
-            catch
-            {
-                //EXCEPTION Needed
-                MessageBox.Show("Null");
-
-            }
-           
-        }
-
         private void employee1BindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
