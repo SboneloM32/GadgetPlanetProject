@@ -33,6 +33,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.employee1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ist2akDataSet1 = new projectDemo.ist2akDataSet1();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -40,8 +42,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.employee1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ist2akDataSet1 = new projectDemo.ist2akDataSet1();
             this.employee1TableAdapter1 = new projectDemo.ist2akDataSet1TableAdapters.Employee1TableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.employee1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ist2akDataSet1)).BeginInit();
@@ -82,6 +82,16 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(166, 20);
             this.textBox1.TabIndex = 3;
+            // 
+            // employee1BindingSource
+            // 
+            this.employee1BindingSource.DataMember = "Employee1";
+            this.employee1BindingSource.DataSource = this.ist2akDataSet1;
+            // 
+            // ist2akDataSet1
+            // 
+            this.ist2akDataSet1.DataSetName = "ist2akDataSet1";
+            this.ist2akDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox2
             // 
@@ -156,16 +166,6 @@
     "ercase, one number, and one symbol.";
             this.label5.Visible = false;
             // 
-            // employee1BindingSource
-            // 
-            this.employee1BindingSource.DataMember = "Employee1";
-            this.employee1BindingSource.DataSource = this.ist2akDataSet1;
-            // 
-            // ist2akDataSet1
-            // 
-            this.ist2akDataSet1.DataSetName = "ist2akDataSet1";
-            this.ist2akDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // employee1TableAdapter1
             // 
             this.employee1TableAdapter1.ClearBeforeFill = true;
@@ -188,7 +188,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ForgetPassword";
-            this.Text = "ForgetPassword";
+            this.Text = " v ";
             this.Load += new System.EventHandler(this.ForgetPassword_Load);
             ((System.ComponentModel.ISupportInitialize)(this.employee1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ist2akDataSet1)).EndInit();

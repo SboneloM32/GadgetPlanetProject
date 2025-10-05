@@ -165,7 +165,7 @@
             this.viewProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewSalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.xxxxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            //this.xxxxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label18 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.employee1BindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -1648,9 +1648,9 @@
             // 
             // xxxxToolStripMenuItem
             // 
-            this.xxxxToolStripMenuItem.Name = "xxxxToolStripMenuItem";
-            this.xxxxToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.xxxxToolStripMenuItem.Text = "xxxx";
+      //      this.xxxxToolStripMenuItem.Name = "xxxxToolStripMenuItem";
+        //    this.xxxxToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+         //   this.xxxxToolStripMenuItem.Text = "xxxx";
             // 
             // label18
             // 
