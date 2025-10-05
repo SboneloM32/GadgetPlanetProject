@@ -28,7 +28,7 @@ namespace projectDemo
             listBox1.Items.Clear();
             foreach (var product in cartItems)
             {
-                listBox1.Items.Add($"{product.ProductName} - {product.Quantity} x R{product.Price} = R{product.TotalPrice}");
+                listBox1.Items.Add($"{product.ProductName} - {product.Quantity} = R{product.Price} ");
             }
         }
         public void AddCartItem(Product product) {
@@ -45,7 +45,7 @@ namespace projectDemo
             {
                 // Add each product to the ListBox with formatted string
                
-                listBox1.Items.Add($"{product.ProductName}-  Quantity:{product.Quantity} -Total Price : R{product.TotalPrice:F2}"+Environment.NewLine);
+                listBox1.Items.Add($"{product.ProductName}-  Quantity:{product.Quantity} -Total Price : R{product.Price:F2}"+Environment.NewLine);
             }
         }
         private void label2_Click(object sender, EventArgs e)
@@ -66,7 +66,7 @@ namespace projectDemo
         private void button2_Click(object sender, EventArgs e)
         {
             Products pr = new Products();
-            pr.Hide();
+           // pr.Hide();
             pr.Show();
         }
     }

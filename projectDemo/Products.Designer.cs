@@ -165,12 +165,12 @@
             this.viewProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewSalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            //this.xxxxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label18 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.employee1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ist2akDataSet1 = new projectDemo.ist2akDataSet1();
             this.employee1TableAdapter = new projectDemo.ist2akDataSet1TableAdapters.Employee1TableAdapter();
+            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
             this.LaptopGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
@@ -224,6 +224,7 @@
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employee1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ist2akDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             this.SuspendLayout();
             // 
             // LaptopGroupBox
@@ -265,16 +266,36 @@
             // numericUpDown5
             // 
             this.numericUpDown5.Location = new System.Drawing.Point(1168, 179);
+            this.numericUpDown5.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(42, 20);
             this.numericUpDown5.TabIndex = 34;
+            this.numericUpDown5.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown4
             // 
             this.numericUpDown4.Location = new System.Drawing.Point(888, 176);
+            this.numericUpDown4.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(40, 20);
             this.numericUpDown4.TabIndex = 33;
+            this.numericUpDown4.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown3
             // 
@@ -292,6 +313,7 @@
             0,
             0,
             0});
+            this.numericUpDown3.ValueChanged += new System.EventHandler(this.numericUpDown3_ValueChanged);
             // 
             // numericUpDown2
             // 
@@ -309,6 +331,7 @@
             0,
             0,
             0});
+            this.numericUpDown2.ValueChanged += new System.EventHandler(this.numericUpDown2_ValueChanged);
             // 
             // numericUpDown1
             // 
@@ -446,6 +469,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 17;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // AsusBtn
             // 
@@ -545,6 +569,7 @@
             // MDeviceGroupBox
             // 
             this.MDeviceGroupBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.MDeviceGroupBox.Controls.Add(this.numericUpDown11);
             this.MDeviceGroupBox.Controls.Add(this.numericUpDown18);
             this.MDeviceGroupBox.Controls.Add(this.numericUpDown17);
             this.MDeviceGroupBox.Controls.Add(this.numericUpDown16);
@@ -620,86 +645,206 @@
             // numericUpDown18
             // 
             this.numericUpDown18.Location = new System.Drawing.Point(1177, 426);
+            this.numericUpDown18.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown18.Name = "numericUpDown18";
             this.numericUpDown18.Size = new System.Drawing.Size(36, 20);
             this.numericUpDown18.TabIndex = 67;
+            this.numericUpDown18.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown17
             // 
             this.numericUpDown17.Location = new System.Drawing.Point(978, 428);
+            this.numericUpDown17.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown17.Name = "numericUpDown17";
             this.numericUpDown17.Size = new System.Drawing.Size(41, 20);
             this.numericUpDown17.TabIndex = 66;
+            this.numericUpDown17.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown16
             // 
             this.numericUpDown16.Location = new System.Drawing.Point(776, 426);
+            this.numericUpDown16.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown16.Name = "numericUpDown16";
             this.numericUpDown16.Size = new System.Drawing.Size(41, 20);
             this.numericUpDown16.TabIndex = 65;
+            this.numericUpDown16.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown15
             // 
             this.numericUpDown15.Location = new System.Drawing.Point(581, 429);
+            this.numericUpDown15.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown15.Name = "numericUpDown15";
             this.numericUpDown15.Size = new System.Drawing.Size(34, 20);
             this.numericUpDown15.TabIndex = 64;
+            this.numericUpDown15.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown14
             // 
             this.numericUpDown14.Location = new System.Drawing.Point(412, 427);
+            this.numericUpDown14.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown14.Name = "numericUpDown14";
             this.numericUpDown14.Size = new System.Drawing.Size(37, 20);
             this.numericUpDown14.TabIndex = 63;
+            this.numericUpDown14.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown13
             // 
             this.numericUpDown13.Location = new System.Drawing.Point(199, 425);
+            this.numericUpDown13.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown13.Name = "numericUpDown13";
             this.numericUpDown13.Size = new System.Drawing.Size(41, 20);
             this.numericUpDown13.TabIndex = 62;
+            this.numericUpDown13.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown12
             // 
             this.numericUpDown12.Location = new System.Drawing.Point(16, 429);
+            this.numericUpDown12.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown12.Name = "numericUpDown12";
             this.numericUpDown12.Size = new System.Drawing.Size(39, 20);
             this.numericUpDown12.TabIndex = 61;
+            this.numericUpDown12.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown10
             // 
             this.numericUpDown10.Location = new System.Drawing.Point(938, 185);
+            this.numericUpDown10.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown10.Name = "numericUpDown10";
             this.numericUpDown10.Size = new System.Drawing.Size(34, 20);
             this.numericUpDown10.TabIndex = 59;
+            this.numericUpDown10.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown9
             // 
             this.numericUpDown9.Location = new System.Drawing.Point(678, 184);
+            this.numericUpDown9.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown9.Name = "numericUpDown9";
             this.numericUpDown9.Size = new System.Drawing.Size(40, 20);
             this.numericUpDown9.TabIndex = 58;
+            this.numericUpDown9.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown8
             // 
             this.numericUpDown8.Location = new System.Drawing.Point(453, 184);
+            this.numericUpDown8.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown8.Name = "numericUpDown8";
             this.numericUpDown8.Size = new System.Drawing.Size(42, 20);
             this.numericUpDown8.TabIndex = 57;
+            this.numericUpDown8.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown7
             // 
             this.numericUpDown7.Location = new System.Drawing.Point(226, 184);
+            this.numericUpDown7.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown7.Name = "numericUpDown7";
             this.numericUpDown7.Size = new System.Drawing.Size(44, 20);
             this.numericUpDown7.TabIndex = 56;
+            this.numericUpDown7.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown6
             // 
             this.numericUpDown6.Location = new System.Drawing.Point(16, 185);
+            this.numericUpDown6.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(39, 20);
             this.numericUpDown6.TabIndex = 55;
+            this.numericUpDown6.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label45
             // 
@@ -955,6 +1100,7 @@
             this.button19.TabIndex = 27;
             this.button19.Text = "Add to Cart";
             this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // button18
             // 
@@ -967,6 +1113,7 @@
             this.button18.TabIndex = 26;
             this.button18.Text = "Add to Cart";
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button17
             // 
@@ -979,6 +1126,7 @@
             this.button17.TabIndex = 25;
             this.button17.Text = "Add to Cart";
             this.button17.UseVisualStyleBackColor = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button16
             // 
@@ -991,6 +1139,7 @@
             this.button16.TabIndex = 24;
             this.button16.Text = "Add to Cart";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button15
             // 
@@ -1003,6 +1152,7 @@
             this.button15.TabIndex = 23;
             this.button15.Text = "Add to Cart";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button14
             // 
@@ -1015,6 +1165,7 @@
             this.button14.TabIndex = 22;
             this.button14.Text = "Add to Cart";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button13
             // 
@@ -1027,6 +1178,7 @@
             this.button13.TabIndex = 21;
             this.button13.Text = "Add to Cart";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // Mobicel
             // 
@@ -1103,12 +1255,13 @@
             this.button11.BackColor = System.Drawing.Color.Green;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button11.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button11.Location = new System.Drawing.Point(1226, 201);
+            this.button11.Location = new System.Drawing.Point(1226, 211);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 23);
             this.button11.TabIndex = 12;
             this.button11.Text = "Add to Cart";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // HuaweiMateBtn
             // 
@@ -1121,6 +1274,7 @@
             this.HuaweiMateBtn.TabIndex = 11;
             this.HuaweiMateBtn.Text = "Add to Cart";
             this.HuaweiMateBtn.UseVisualStyleBackColor = false;
+            this.HuaweiMateBtn.Click += new System.EventHandler(this.HuaweiMateBtn_Click);
             // 
             // iphoneSEBtn
             // 
@@ -1133,6 +1287,7 @@
             this.iphoneSEBtn.TabIndex = 10;
             this.iphoneSEBtn.Text = "Add to Cart";
             this.iphoneSEBtn.UseVisualStyleBackColor = false;
+            this.iphoneSEBtn.Click += new System.EventHandler(this.iphoneSEBtn_Click);
             // 
             // iphone12Btn
             // 
@@ -1145,6 +1300,7 @@
             this.iphone12Btn.TabIndex = 9;
             this.iphone12Btn.Text = "Add to Cart";
             this.iphone12Btn.UseVisualStyleBackColor = false;
+            this.iphone12Btn.Click += new System.EventHandler(this.iphone12Btn_Click);
             // 
             // iphone15Btn
             // 
@@ -1157,6 +1313,7 @@
             this.iphone15Btn.TabIndex = 8;
             this.iphone15Btn.Text = "Add to Cart";
             this.iphone15Btn.UseVisualStyleBackColor = false;
+            this.iphone15Btn.Click += new System.EventHandler(this.iphone15Btn_Click);
             // 
             // Iphone13Btn
             // 
@@ -1280,44 +1437,104 @@
             // numericUpDown24
             // 
             this.numericUpDown24.Location = new System.Drawing.Point(1167, 178);
+            this.numericUpDown24.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown24.Name = "numericUpDown24";
             this.numericUpDown24.Size = new System.Drawing.Size(46, 20);
             this.numericUpDown24.TabIndex = 29;
+            this.numericUpDown24.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown23
             // 
             this.numericUpDown23.Location = new System.Drawing.Point(921, 183);
+            this.numericUpDown23.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown23.Name = "numericUpDown23";
             this.numericUpDown23.Size = new System.Drawing.Size(44, 20);
             this.numericUpDown23.TabIndex = 28;
+            this.numericUpDown23.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown22
             // 
             this.numericUpDown22.Location = new System.Drawing.Point(688, 179);
+            this.numericUpDown22.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown22.Name = "numericUpDown22";
             this.numericUpDown22.Size = new System.Drawing.Size(38, 20);
             this.numericUpDown22.TabIndex = 27;
+            this.numericUpDown22.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown21
             // 
             this.numericUpDown21.Location = new System.Drawing.Point(456, 183);
+            this.numericUpDown21.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown21.Name = "numericUpDown21";
             this.numericUpDown21.Size = new System.Drawing.Size(39, 20);
             this.numericUpDown21.TabIndex = 26;
+            this.numericUpDown21.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown20
             // 
             this.numericUpDown20.Location = new System.Drawing.Point(258, 180);
+            this.numericUpDown20.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown20.Name = "numericUpDown20";
             this.numericUpDown20.Size = new System.Drawing.Size(33, 20);
             this.numericUpDown20.TabIndex = 25;
+            this.numericUpDown20.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown19
             // 
             this.numericUpDown19.Location = new System.Drawing.Point(34, 177);
+            this.numericUpDown19.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown19.Name = "numericUpDown19";
             this.numericUpDown19.Size = new System.Drawing.Size(36, 20);
             this.numericUpDown19.TabIndex = 24;
+            this.numericUpDown19.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label51
             // 
@@ -1384,6 +1601,7 @@
             this.button25.TabIndex = 17;
             this.button25.Text = "Add to Cart";
             this.button25.UseVisualStyleBackColor = false;
+            this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
             // button24
             // 
@@ -1396,6 +1614,7 @@
             this.button24.TabIndex = 16;
             this.button24.Text = "Add to Cart";
             this.button24.UseVisualStyleBackColor = false;
+            this.button24.Click += new System.EventHandler(this.button24_Click);
             // 
             // button23
             // 
@@ -1408,6 +1627,7 @@
             this.button23.TabIndex = 15;
             this.button23.Text = "Add to Cart";
             this.button23.UseVisualStyleBackColor = false;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // button22
             // 
@@ -1420,6 +1640,7 @@
             this.button22.TabIndex = 14;
             this.button22.Text = "Add to Cart";
             this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button21
             // 
@@ -1432,6 +1653,7 @@
             this.button21.TabIndex = 13;
             this.button21.Text = "Add to Cart";
             this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // button20
             // 
@@ -1444,6 +1666,7 @@
             this.button20.TabIndex = 12;
             this.button20.Text = "Add to Cart";
             this.button20.UseVisualStyleBackColor = false;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
             // 
             // label26
             // 
@@ -1643,15 +1866,9 @@
             // viewSalesToolStripMenuItem
             // 
             this.viewSalesToolStripMenuItem.Name = "viewSalesToolStripMenuItem";
-            this.viewSalesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewSalesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.viewSalesToolStripMenuItem.Text = "View Sales";
             this.viewSalesToolStripMenuItem.Click += new System.EventHandler(this.viewSalesToolStripMenuItem_Click);
-            // 
-            // xxxxToolStripMenuItem
-            // 
-      //      this.xxxxToolStripMenuItem.Name = "xxxxToolStripMenuItem";
-        //    this.xxxxToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-         //   this.xxxxToolStripMenuItem.Text = "xxxx";
             // 
             // label18
             // 
@@ -1685,6 +1902,24 @@
             // employee1TableAdapter
             // 
             this.employee1TableAdapter.ClearBeforeFill = true;
+            // 
+            // numericUpDown11
+            // 
+            this.numericUpDown11.Location = new System.Drawing.Point(1167, 186);
+            this.numericUpDown11.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown11.Name = "numericUpDown11";
+            this.numericUpDown11.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDown11.TabIndex = 68;
+            this.numericUpDown11.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown11.ValueChanged += new System.EventHandler(this.numericUpDown11_ValueChanged);
             // 
             // Products
             // 
@@ -1761,6 +1996,7 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employee1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ist2akDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1908,5 +2144,6 @@
         private System.Windows.Forms.NumericUpDown numericUpDown24;
         private System.Windows.Forms.NumericUpDown numericUpDown23;
         private System.Windows.Forms.NumericUpDown numericUpDown22;
+        private System.Windows.Forms.NumericUpDown numericUpDown11;
     }
 }
