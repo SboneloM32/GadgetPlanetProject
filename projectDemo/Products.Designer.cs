@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Products));
             this.LaptopGroupBox = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
@@ -162,10 +161,8 @@
             this.allProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewCustomersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addNewCustomerToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewSalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label18 = new System.Windows.Forms.Label();
@@ -173,7 +170,6 @@
             this.employee1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ist2akDataSet1 = new projectDemo.ist2akDataSet1();
             this.employee1TableAdapter = new projectDemo.ist2akDataSet1TableAdapters.Employee1TableAdapter();
-            this.xxxxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LaptopGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
@@ -232,7 +228,6 @@
             // LaptopGroupBox
             // 
             this.LaptopGroupBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LaptopGroupBox.Controls.Add(this.button1);
             this.LaptopGroupBox.Controls.Add(this.numericUpDown5);
             this.LaptopGroupBox.Controls.Add(this.numericUpDown4);
             this.LaptopGroupBox.Controls.Add(this.numericUpDown3);
@@ -266,16 +261,6 @@
             this.LaptopGroupBox.TabStop = false;
             this.LaptopGroupBox.Text = "Laptops(PC)";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(809, 59);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(57, 23);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // numericUpDown5
             // 
             this.numericUpDown5.Location = new System.Drawing.Point(1168, 179);
@@ -293,23 +278,54 @@
             // numericUpDown3
             // 
             this.numericUpDown3.Location = new System.Drawing.Point(605, 177);
+            this.numericUpDown3.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(34, 20);
             this.numericUpDown3.TabIndex = 32;
+            this.numericUpDown3.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown2
             // 
             this.numericUpDown2.Location = new System.Drawing.Point(313, 182);
+            this.numericUpDown2.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(36, 20);
             this.numericUpDown2.TabIndex = 31;
+            this.numericUpDown2.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(80, 183);
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(47, 20);
             this.numericUpDown1.TabIndex = 30;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // label32
             // 
@@ -361,27 +377,27 @@
             this.label27.AutoSize = true;
             this.label27.Location = new System.Drawing.Point(648, 20);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(51, 13);
+            this.label27.Size = new System.Drawing.Size(101, 13);
             this.label27.TabIndex = 24;
-            this.label27.Text = "HUAWEI";
+            this.label27.Text = "HUAWEI Mate D16";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(1142, 20);
+            this.label16.Location = new System.Drawing.Point(1223, 20);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(30, 13);
+            this.label16.Size = new System.Drawing.Size(79, 13);
             this.label16.TabIndex = 23;
-            this.label16.Text = "Asus";
+            this.label16.Text = "Asus VivoBook";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(953, 17);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 13);
+            this.label15.Size = new System.Drawing.Size(84, 13);
             this.label15.TabIndex = 22;
-            this.label15.Text = "Macbook";
+            this.label15.Text = "Macbook air pro";
             // 
             // label14
             // 
@@ -396,18 +412,18 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(393, 20);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(34, 13);
+            this.label13.Size = new System.Drawing.Size(70, 13);
             this.label13.TabIndex = 20;
-            this.label13.Text = "DELL";
+            this.label13.Text = "DELL Laptop";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(162, 4);
+            this.label12.Location = new System.Drawing.Point(121, 16);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(22, 13);
+            this.label12.Size = new System.Drawing.Size(58, 13);
             this.label12.TabIndex = 19;
-            this.label12.Text = "HP";
+            this.label12.Text = "HP Laptop";
             // 
             // pictureBox4
             // 
@@ -440,6 +456,7 @@
             this.AsusBtn.TabIndex = 15;
             this.AsusBtn.Text = "Add to Cart";
             this.AsusBtn.UseVisualStyleBackColor = false;
+            this.AsusBtn.Click += new System.EventHandler(this.AsusBtn_Click);
             // 
             // MacBookBtn
             // 
@@ -452,6 +469,7 @@
             this.MacBookBtn.TabIndex = 14;
             this.MacBookBtn.Text = "Add to Cart";
             this.MacBookBtn.UseVisualStyleBackColor = false;
+            this.MacBookBtn.Click += new System.EventHandler(this.MacBookBtn_Click);
             // 
             // HuaweiLaptopBtn
             // 
@@ -464,6 +482,7 @@
             this.HuaweiLaptopBtn.TabIndex = 13;
             this.HuaweiLaptopBtn.Text = "Add to Cart";
             this.HuaweiLaptopBtn.UseVisualStyleBackColor = false;
+            this.HuaweiLaptopBtn.Click += new System.EventHandler(this.HuaweiLaptopBtn_Click);
             // 
             // DelLaptopBtn
             // 
@@ -1148,6 +1167,7 @@
             this.Iphone13Btn.TabIndex = 7;
             this.Iphone13Btn.Text = "Add to Cart";
             this.Iphone13Btn.UseVisualStyleBackColor = false;
+            this.Iphone13Btn.Click += new System.EventHandler(this.Iphone13Btn_Click);
             // 
             // HuaweiNova
             // 
@@ -1565,13 +1585,13 @@
             this.allProductsToolStripMenuItem,
             this.addNewCustomerToolStripMenuItem,
             this.productsToolStripMenuItem,
-            this.salesToolStripMenuItem,
-            this.xxxxToolStripMenuItem});
+            this.salesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1455, 24);
             this.menuStrip1.TabIndex = 19;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // allProductsToolStripMenuItem
             // 
@@ -1582,8 +1602,7 @@
             // addNewCustomerToolStripMenuItem
             // 
             this.addNewCustomerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewCustomersToolStripMenuItem,
-            this.addNewCustomerToolStripMenuItem1});
+            this.viewCustomersToolStripMenuItem});
             this.addNewCustomerToolStripMenuItem.Name = "addNewCustomerToolStripMenuItem";
             this.addNewCustomerToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.addNewCustomerToolStripMenuItem.Text = " Customers";
@@ -1591,36 +1610,24 @@
             // viewCustomersToolStripMenuItem
             // 
             this.viewCustomersToolStripMenuItem.Name = "viewCustomersToolStripMenuItem";
-            this.viewCustomersToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.viewCustomersToolStripMenuItem.Text = "View Customers";
+            this.viewCustomersToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.viewCustomersToolStripMenuItem.Text = " Customer Registration";
             this.viewCustomersToolStripMenuItem.Click += new System.EventHandler(this.viewCustomersToolStripMenuItem_Click);
-            // 
-            // addNewCustomerToolStripMenuItem1
-            // 
-            this.addNewCustomerToolStripMenuItem1.Name = "addNewCustomerToolStripMenuItem1";
-            this.addNewCustomerToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
-            this.addNewCustomerToolStripMenuItem1.Text = "Add new Customer";
             // 
             // productsToolStripMenuItem
             // 
             this.productsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.viewProductsToolStripMenuItem,
-            this.addProductToolStripMenuItem});
+            this.viewProductsToolStripMenuItem});
             this.productsToolStripMenuItem.Name = "productsToolStripMenuItem";
             this.productsToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.productsToolStripMenuItem.Text = "Products";
+            this.productsToolStripMenuItem.Click += new System.EventHandler(this.productsToolStripMenuItem_Click);
             // 
             // viewProductsToolStripMenuItem
             // 
             this.viewProductsToolStripMenuItem.Name = "viewProductsToolStripMenuItem";
-            this.viewProductsToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.viewProductsToolStripMenuItem.Text = "View Products";
-            // 
-            // addProductToolStripMenuItem
-            // 
-            this.addProductToolStripMenuItem.Name = "addProductToolStripMenuItem";
-            this.addProductToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.addProductToolStripMenuItem.Text = "Add Product";
+            this.viewProductsToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.viewProductsToolStripMenuItem.Text = "Products Registration";
             // 
             // salesToolStripMenuItem
             // 
@@ -1634,7 +1641,7 @@
             // viewSalesToolStripMenuItem
             // 
             this.viewSalesToolStripMenuItem.Name = "viewSalesToolStripMenuItem";
-            this.viewSalesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewSalesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.viewSalesToolStripMenuItem.Text = "View Sales";
             this.viewSalesToolStripMenuItem.Click += new System.EventHandler(this.viewSalesToolStripMenuItem_Click);
             // 
@@ -1670,12 +1677,6 @@
             // employee1TableAdapter
             // 
             this.employee1TableAdapter.ClearBeforeFill = true;
-            // 
-            // xxxxToolStripMenuItem
-            // 
-            this.xxxxToolStripMenuItem.Name = "xxxxToolStripMenuItem";
-            this.xxxxToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.xxxxToolStripMenuItem.Text = "xxxx";
             // 
             // Products
             // 
@@ -1842,10 +1843,8 @@
         private System.Windows.Forms.ToolStripMenuItem allProductsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewCustomerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewCustomersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addNewCustomerToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem productsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewProductsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addProductToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewSalesToolStripMenuItem;
         private ist2akDataSet1 ist2akDataSet1;
@@ -1901,7 +1900,5 @@
         private System.Windows.Forms.NumericUpDown numericUpDown24;
         private System.Windows.Forms.NumericUpDown numericUpDown23;
         private System.Windows.Forms.NumericUpDown numericUpDown22;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ToolStripMenuItem xxxxToolStripMenuItem;
     }
 }

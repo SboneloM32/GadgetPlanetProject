@@ -111,6 +111,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ist2akDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Product.cs" />
     <Compile Include="Products.cs">
       <SubType>Form</SubType>
     </Compile>
