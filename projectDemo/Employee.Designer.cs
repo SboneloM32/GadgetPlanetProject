@@ -65,12 +65,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.employee1TableAdapter2 = new projectDemo.ist2akDataSet1TableAdapters.Employee1TableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.employee1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ist2akDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employee1BindingNavigator)).BeginInit();
             this.employee1BindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employee1DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ist2akDataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // employee1BindingSource
@@ -353,11 +357,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(529, 499);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(79, 27);
+            this.button2.TabIndex = 42;
+            this.button2.Text = "Remove";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // employee1TableAdapter2
+            // 
+            this.employee1TableAdapter2.ClearBeforeFill = true;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1630, 784);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -373,6 +392,7 @@
             this.employee1BindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.employee1DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ist2akDataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -414,5 +434,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private ist2akDataSet1TableAdapters.Employee1TableAdapter employee1TableAdapter2;
     }
 }

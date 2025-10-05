@@ -44,5 +44,51 @@ namespace projectDemo
                 }
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string productID = textBox1.Text.Trim();
+
+            if (string.IsNullOrEmpty(productID))
+            {
+                MessageBox.Show("Please enter a ProductID!");
+                return;
+            }
+
+            if (!productID.All(char.IsDigit))
+            {
+                MessageBox.Show("Input must contain only digits!");
+                return;
+            }
+
+            productBindingSource.Filter = "ProductID = '" + productID + "'";
+
+            if (productBindingSource.Count == 0)
+            {
+                MessageBox.Show("No product found with the provided ProductID.");
+                return;
+            }
+
+            DialogResult confirmation = MessageBox.Show("Are you sure you want to delete this record?", "Confirm", MessageBoxButtons.YesNo);
+
+            if (confirmation == DialogResult.Yes)
+            {
+                try
+                {
+                    productBindingSource.RemoveCurrent();
+                    MessageBox.Show("Product record deleted successfully.");
+                    productBindingSource.EndEdit();
+                    productTableAdapter.Update(ist2akDataSet1);
+                }
+                catch
+                {
+                    MessageBox.Show("Error deleting customer: ");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Deletion cancelled.");
+            }
+        }
     }
 }

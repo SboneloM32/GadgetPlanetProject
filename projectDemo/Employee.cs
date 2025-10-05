@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using projectDemo.ist2akDataSet1TableAdapters;
 using projectDemo.ist2akDataSetTableAdapters;
 
 namespace projectDemo
@@ -66,6 +67,52 @@ namespace projectDemo
                 {
                     employee1BindingSource.Filter = "EmployeeID = '" + employeeID + " '";
                 }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string employeeID = textBox1.Text.Trim();
+
+            if (string.IsNullOrEmpty(employeeID))
+            {
+                MessageBox.Show("Please enter a EmployeeID!");
+                return;
+            }
+
+            if (!employeeID.All(char.IsDigit))
+            {
+                MessageBox.Show("Input must contain only digits!");
+                return;
+            }
+
+            employee1BindingSource.Filter = "EmployeeID = '" + employeeID + "'";
+
+            if (employee1BindingSource.Count == 0)
+            {
+                MessageBox.Show("No employee found with the provided EmployeeID.");
+                return;
+            }
+
+            DialogResult confirmation = MessageBox.Show("Are you sure you want to delete this record?", "Confirm", MessageBoxButtons.YesNo);
+
+            if (confirmation == DialogResult.Yes)
+            {
+                try
+                {
+                    employee1BindingSource.RemoveCurrent();
+                    MessageBox.Show("Employee record deleted successfully.");
+                    employee1BindingSource.EndEdit();
+                    employee1TableAdapter.Update(ist2akDataSet1);
+                }
+                catch
+                {
+                    MessageBox.Show("Error deleting customer: ");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Deletion cancelled.");
             }
         }
     }

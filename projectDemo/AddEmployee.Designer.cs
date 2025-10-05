@@ -49,8 +49,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.employee1TableAdapter1 = new projectDemo.ist2akDataSet1TableAdapters.Employee1TableAdapter();
             this.ist2akDataSet11 = new projectDemo.ist2akDataSet1();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
@@ -236,24 +234,6 @@
             this.label1.TabIndex = 35;
             this.label1.Text = "Employee ID";
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(179, 471);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(64, 23);
-            this.button2.TabIndex = 61;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(271, 471);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(65, 23);
-            this.button3.TabIndex = 62;
-            this.button3.Text = "Remove";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // employee1TableAdapter1
             // 
             this.employee1TableAdapter1.ClearBeforeFill = true;
@@ -312,8 +292,6 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label12);
@@ -366,8 +344,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private ist2akDataSet1TableAdapters.Employee1TableAdapter employee1TableAdapter1;
         private ist2akDataSet1 ist2akDataSet11;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;

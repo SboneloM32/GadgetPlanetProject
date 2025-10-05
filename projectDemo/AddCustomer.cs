@@ -86,5 +86,24 @@ namespace projectDemo
 
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            DialogResult confirmation;
+            confirmation = MessageBox.Show("Are you sure you want to Delete this Record?", "Confirm", MessageBoxButtons.YesNo);
+
+            if (confirmation == DialogResult.Yes)
+            {
+                bindingSource1.RemoveCurrent();
+            }
+            else {
+                MessageBox.Show("Deletion cancelled");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
