@@ -29,7 +29,10 @@ namespace projectDemo
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(View_Cart));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button2 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -38,8 +41,6 @@ namespace projectDemo
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -52,12 +53,28 @@ namespace projectDemo
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Location = new System.Drawing.Point(238, 77);
+            this.groupBox1.Location = new System.Drawing.Point(240, 77);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(708, 509);
+            this.groupBox1.Size = new System.Drawing.Size(708, 469);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Processing Products";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(201, 283);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(15, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "R";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(222, 280);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(237, 20);
+            this.textBox1.TabIndex = 9;
             // 
             // listBox1
             // 
@@ -130,7 +147,7 @@ namespace projectDemo
             this.button1.BackColor = System.Drawing.Color.DarkGreen;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(539, 420);
+            this.button1.Location = new System.Drawing.Point(539, 410);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 38);
             this.button1.TabIndex = 0;
@@ -148,27 +165,12 @@ namespace projectDemo
             this.label1.TabIndex = 1;
             this.label1.Text = "Shopping Cart ";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(222, 280);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(237, 20);
-            this.textBox1.TabIndex = 9;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(201, 283);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(15, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "R";
-            // 
             // View_Cart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1206, 750);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1206, 547);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Name = "View_Cart";

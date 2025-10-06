@@ -30,6 +30,7 @@ namespace projectDemo
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sales));
             this.saleTableAdapter1 = new projectDemo.ist2akDataSetTableAdapters.SaleTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.saleIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +71,7 @@ namespace projectDemo
             // dataGridView1
             // 
             this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.saleIDDataGridViewTextBoxColumn,
@@ -79,9 +81,9 @@ namespace projectDemo
             this.employeeIDDataGridViewTextBoxColumn,
             this.paymentMethodDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.saleBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 109);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 57);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(648, 344);
+            this.dataGridView1.Size = new System.Drawing.Size(636, 344);
             this.dataGridView1.TabIndex = 0;
             // 
             // saleIDDataGridViewTextBoxColumn
@@ -136,7 +138,7 @@ namespace projectDemo
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(345, 469);
+            this.button1.Location = new System.Drawing.Point(247, 442);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(79, 27);
             this.button1.TabIndex = 39;
@@ -146,7 +148,7 @@ namespace projectDemo
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(73, 473);
+            this.textBox1.Location = new System.Drawing.Point(80, 416);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(246, 20);
             this.textBox1.TabIndex = 38;
@@ -155,7 +157,8 @@ namespace projectDemo
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 475);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(19, 418);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(55, 18);
             this.label1.TabIndex = 37;
@@ -163,7 +166,7 @@ namespace projectDemo
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(458, 469);
+            this.button2.Location = new System.Drawing.Point(247, 475);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(79, 27);
             this.button2.TabIndex = 40;
@@ -173,6 +176,7 @@ namespace projectDemo
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.allProductsToolStripMenuItem,
             this.addNewCustomerToolStripMenuItem,
@@ -187,6 +191,7 @@ namespace projectDemo
             // 
             // allProductsToolStripMenuItem
             // 
+            this.allProductsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.allProductsToolStripMenuItem.Name = "allProductsToolStripMenuItem";
             this.allProductsToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.allProductsToolStripMenuItem.Text = "Home";
@@ -197,6 +202,7 @@ namespace projectDemo
             this.addNewCustomerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewCustomersToolStripMenuItem,
             this.addNewCustomerToolStripMenuItem1});
+            this.addNewCustomerToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.addNewCustomerToolStripMenuItem.Name = "addNewCustomerToolStripMenuItem";
             this.addNewCustomerToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.addNewCustomerToolStripMenuItem.Text = " Customers";
@@ -218,6 +224,7 @@ namespace projectDemo
             // 
             this.productsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewProductsToolStripMenuItem});
+            this.productsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.productsToolStripMenuItem.Name = "productsToolStripMenuItem";
             this.productsToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.productsToolStripMenuItem.Text = "Products";
@@ -233,6 +240,7 @@ namespace projectDemo
             // 
             this.salesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewSalesToolStripMenuItem});
+            this.salesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
             this.salesToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.salesToolStripMenuItem.Text = "Sales";
@@ -249,6 +257,7 @@ namespace projectDemo
             this.employeeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewEmployeesToolStripMenuItem,
             this.addNewEmployeeToolStripMenuItem});
+            this.employeeToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
             this.employeeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.employeeToolStripMenuItem.Text = "Employee";
@@ -269,7 +278,9 @@ namespace projectDemo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1310, 586);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1310, 529);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

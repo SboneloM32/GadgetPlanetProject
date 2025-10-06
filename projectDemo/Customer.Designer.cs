@@ -84,7 +84,7 @@ namespace projectDemo
             this.custPasswordDataGridViewTextBoxColumn,
             this.paymentMethodDataGridViewTextBoxColumn});
             this.customerDataGridView.DataSource = this.customerBindingSource;
-            this.customerDataGridView.Location = new System.Drawing.Point(12, 119);
+            this.customerDataGridView.Location = new System.Drawing.Point(12, 52);
             this.customerDataGridView.Name = "customerDataGridView";
             this.customerDataGridView.Size = new System.Drawing.Size(948, 377);
             this.customerDataGridView.TabIndex = 1;
@@ -173,7 +173,7 @@ namespace projectDemo
             this.button3.BackColor = System.Drawing.SystemColors.MenuText;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(1297, 560);
+            this.button3.Location = new System.Drawing.Point(1309, 469);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 23);
             this.button3.TabIndex = 22;
@@ -183,7 +183,7 @@ namespace projectDemo
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(417, 515);
+            this.button1.Location = new System.Drawing.Point(411, 465);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(79, 27);
             this.button1.TabIndex = 36;
@@ -193,7 +193,7 @@ namespace projectDemo
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(146, 522);
+            this.textBox1.Location = new System.Drawing.Point(142, 469);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(246, 20);
             this.textBox1.TabIndex = 35;
@@ -202,7 +202,7 @@ namespace projectDemo
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 521);
+            this.label1.Location = new System.Drawing.Point(12, 468);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 18);
             this.label1.TabIndex = 34;
@@ -210,7 +210,7 @@ namespace projectDemo
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(526, 515);
+            this.button4.Location = new System.Drawing.Point(523, 465);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(79, 27);
             this.button4.TabIndex = 42;
@@ -330,7 +330,7 @@ namespace projectDemo
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1522, 606);
+            this.ClientSize = new System.Drawing.Size(1522, 535);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.button4);

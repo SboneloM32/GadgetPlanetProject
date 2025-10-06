@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employee));
             this.employee1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ist2akDataSet1 = new projectDemo.ist2akDataSet1();
             this.employee1DataGridView = new System.Windows.Forms.DataGridView();
@@ -261,6 +262,7 @@
             // 
             // homeToolStripMenuItem
             // 
+            this.homeToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
             this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.homeToolStripMenuItem.Text = "Home";
@@ -271,6 +273,7 @@
             this.customersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.vieCustomersToolStripMenuItem,
             this.addNewCustomerToolStripMenuItem});
+            this.customersToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.customersToolStripMenuItem.Name = "customersToolStripMenuItem";
             this.customersToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
             this.customersToolStripMenuItem.Text = "Customers";
@@ -346,7 +349,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1187, 11);
+            this.label2.Location = new System.Drawing.Point(1217, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(43, 13);
             this.label2.TabIndex = 44;
@@ -357,6 +360,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1438, 784);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);

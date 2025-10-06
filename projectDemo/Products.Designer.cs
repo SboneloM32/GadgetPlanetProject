@@ -1828,6 +1828,7 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.allProductsToolStripMenuItem,
             this.addNewCustomerToolStripMenuItem,
@@ -1843,6 +1844,7 @@
             // 
             // allProductsToolStripMenuItem
             // 
+            this.allProductsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.allProductsToolStripMenuItem.Name = "allProductsToolStripMenuItem";
             this.allProductsToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.allProductsToolStripMenuItem.Text = "Home";
@@ -1853,6 +1855,7 @@
             this.addNewCustomerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewCustomersToolStripMenuItem,
             this.addNewCustomerToolStripMenuItem1});
+            this.addNewCustomerToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.addNewCustomerToolStripMenuItem.Name = "addNewCustomerToolStripMenuItem";
             this.addNewCustomerToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.addNewCustomerToolStripMenuItem.Text = " Customers";
@@ -1876,6 +1879,7 @@
             // 
             this.productsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewProductsToolStripMenuItem});
+            this.productsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.productsToolStripMenuItem.Name = "productsToolStripMenuItem";
             this.productsToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.productsToolStripMenuItem.Text = "Products";
@@ -1892,6 +1896,7 @@
             // 
             this.salesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewSalesToolStripMenuItem});
+            this.salesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
             this.salesToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.salesToolStripMenuItem.Text = "Sales";
@@ -1909,6 +1914,7 @@
             this.employeeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewEmployeesToolStripMenuItem,
             this.addNewEmployeeToolStripMenuItem});
+            this.employeeToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
             this.employeeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.employeeToolStripMenuItem.Text = "Employee";

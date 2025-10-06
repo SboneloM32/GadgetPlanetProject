@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddCustomer));
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -74,7 +75,7 @@
             // 
             this.textBox9.Location = new System.Drawing.Point(217, 392);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(167, 20);
+            this.textBox9.Size = new System.Drawing.Size(190, 20);
             this.textBox9.TabIndex = 41;
             // 
             // label9
@@ -90,28 +91,28 @@
             // 
             this.textBox8.Location = new System.Drawing.Point(218, 436);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(139, 20);
+            this.textBox8.Size = new System.Drawing.Size(188, 20);
             this.textBox8.TabIndex = 39;
             // 
             // textBox7
             // 
             this.textBox7.Location = new System.Drawing.Point(218, 357);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(175, 20);
+            this.textBox7.Size = new System.Drawing.Size(188, 20);
             this.textBox7.TabIndex = 38;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(218, 316);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(167, 20);
+            this.textBox6.Size = new System.Drawing.Size(188, 20);
             this.textBox6.TabIndex = 37;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(217, 273);
+            this.textBox5.Location = new System.Drawing.Point(217, 269);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(223, 20);
+            this.textBox5.Size = new System.Drawing.Size(189, 20);
             this.textBox5.TabIndex = 36;
             // 
             // textBox4
@@ -258,7 +259,7 @@
             this.employeeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(911, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(725, 24);
             this.menuStrip1.TabIndex = 64;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -281,14 +282,14 @@
             // vieCustomersToolStripMenuItem
             // 
             this.vieCustomersToolStripMenuItem.Name = "vieCustomersToolStripMenuItem";
-            this.vieCustomersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.vieCustomersToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.vieCustomersToolStripMenuItem.Text = "View Customers";
             this.vieCustomersToolStripMenuItem.Click += new System.EventHandler(this.vieCustomersToolStripMenuItem_Click);
             // 
             // addNewCustomerToolStripMenuItem
             // 
             this.addNewCustomerToolStripMenuItem.Name = "addNewCustomerToolStripMenuItem";
-            this.addNewCustomerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewCustomerToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.addNewCustomerToolStripMenuItem.Text = "Add New Customer";
             this.addNewCustomerToolStripMenuItem.Click += new System.EventHandler(this.addNewCustomerToolStripMenuItem_Click);
             // 
@@ -303,7 +304,7 @@
             // viewProductsToolStripMenuItem
             // 
             this.viewProductsToolStripMenuItem.Name = "viewProductsToolStripMenuItem";
-            this.viewProductsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewProductsToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
             this.viewProductsToolStripMenuItem.Text = "View Products";
             this.viewProductsToolStripMenuItem.Click += new System.EventHandler(this.viewProductsToolStripMenuItem_Click);
             // 
@@ -318,7 +319,7 @@
             // viewSalesToolStripMenuItem
             // 
             this.viewSalesToolStripMenuItem.Name = "viewSalesToolStripMenuItem";
-            this.viewSalesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewSalesToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.viewSalesToolStripMenuItem.Text = "View Sales";
             this.viewSalesToolStripMenuItem.Click += new System.EventHandler(this.viewSalesToolStripMenuItem_Click);
             // 
@@ -334,14 +335,14 @@
             // viewEmployeesToolStripMenuItem
             // 
             this.viewEmployeesToolStripMenuItem.Name = "viewEmployeesToolStripMenuItem";
-            this.viewEmployeesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewEmployeesToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.viewEmployeesToolStripMenuItem.Text = "View Employees";
             this.viewEmployeesToolStripMenuItem.Click += new System.EventHandler(this.viewEmployeesToolStripMenuItem_Click);
             // 
             // addNewEmployeeToolStripMenuItem
             // 
             this.addNewEmployeeToolStripMenuItem.Name = "addNewEmployeeToolStripMenuItem";
-            this.addNewEmployeeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewEmployeeToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.addNewEmployeeToolStripMenuItem.Text = "Add New Employee";
             this.addNewEmployeeToolStripMenuItem.Click += new System.EventHandler(this.addNewEmployeeToolStripMenuItem_Click);
             // 
@@ -359,7 +360,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(911, 564);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(725, 536);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.menuStrip1);
