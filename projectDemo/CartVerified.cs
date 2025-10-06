@@ -76,5 +76,10 @@ namespace projectDemo
         {
             this.Close();   
         }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -55,19 +55,33 @@
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.homeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewCustomersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewCustomerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewSalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.employeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewEmployeesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewEmployeeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ist2akDataSet11)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(154, 415);
+            this.textBox12.Location = new System.Drawing.Point(170, 472);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(100, 20);
             this.textBox12.TabIndex = 60;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(154, 389);
+            this.textBox7.Location = new System.Drawing.Point(170, 446);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 20);
             this.textBox7.TabIndex = 59;
@@ -75,7 +89,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(48, 418);
+            this.label12.Location = new System.Drawing.Point(64, 475);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(53, 13);
             this.label12.TabIndex = 58;
@@ -84,7 +98,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(48, 392);
+            this.label7.Location = new System.Drawing.Point(64, 449);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 13);
             this.label7.TabIndex = 57;
@@ -92,7 +106,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(87, 471);
+            this.button1.Location = new System.Drawing.Point(103, 528);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(66, 23);
             this.button1.TabIndex = 55;
@@ -102,14 +116,14 @@
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(154, 291);
+            this.textBox11.Location = new System.Drawing.Point(170, 348);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(192, 20);
             this.textBox11.TabIndex = 54;
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(154, 191);
+            this.textBox8.Location = new System.Drawing.Point(170, 248);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(182, 90);
@@ -117,28 +131,28 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(154, 136);
+            this.textBox5.Location = new System.Drawing.Point(170, 193);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(150, 20);
             this.textBox5.TabIndex = 49;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(154, 81);
+            this.textBox3.Location = new System.Drawing.Point(170, 138);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(169, 20);
             this.textBox3.TabIndex = 47;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(154, 55);
+            this.textBox2.Location = new System.Drawing.Point(170, 112);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(169, 20);
             this.textBox2.TabIndex = 46;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(154, 23);
+            this.textBox1.Location = new System.Drawing.Point(170, 80);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(48, 20);
@@ -147,7 +161,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(47, 347);
+            this.label11.Location = new System.Drawing.Point(63, 404);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(76, 13);
             this.label11.TabIndex = 44;
@@ -156,7 +170,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(47, 320);
+            this.label10.Location = new System.Drawing.Point(63, 377);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(52, 13);
             this.label10.TabIndex = 43;
@@ -165,7 +179,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(48, 294);
+            this.label9.Location = new System.Drawing.Point(64, 351);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(32, 13);
             this.label9.TabIndex = 42;
@@ -174,7 +188,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(47, 227);
+            this.label8.Location = new System.Drawing.Point(63, 284);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(45, 13);
             this.label8.TabIndex = 41;
@@ -183,7 +197,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(48, 168);
+            this.label6.Location = new System.Drawing.Point(64, 225);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(29, 13);
             this.label6.TabIndex = 40;
@@ -192,7 +206,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(48, 139);
+            this.label5.Location = new System.Drawing.Point(64, 196);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 13);
             this.label5.TabIndex = 39;
@@ -201,7 +215,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(48, 110);
+            this.label4.Location = new System.Drawing.Point(64, 167);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 13);
             this.label4.TabIndex = 38;
@@ -210,7 +224,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(48, 84);
+            this.label3.Location = new System.Drawing.Point(64, 141);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 37;
@@ -219,7 +233,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 58);
+            this.label2.Location = new System.Drawing.Point(64, 115);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 36;
@@ -228,7 +242,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(48, 26);
+            this.label1.Location = new System.Drawing.Point(64, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 35;
@@ -245,7 +259,7 @@
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(154, 110);
+            this.maskedTextBox1.Location = new System.Drawing.Point(170, 167);
             this.maskedTextBox1.Mask = "0000/00/00";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(150, 20);
@@ -254,7 +268,7 @@
             // 
             // maskedTextBox2
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(154, 317);
+            this.maskedTextBox2.Location = new System.Drawing.Point(170, 374);
             this.maskedTextBox2.Mask = "0000/00/00";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(150, 20);
@@ -265,9 +279,10 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
+            "Cashier",
             "Admin",
             "Manager"});
-            this.comboBox1.Location = new System.Drawing.Point(154, 164);
+            this.comboBox1.Location = new System.Drawing.Point(170, 221);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(89, 21);
             this.comboBox1.TabIndex = 65;
@@ -278,16 +293,123 @@
             this.comboBox2.Items.AddRange(new object[] {
             "On-Duty",
             "Off-Duty"});
-            this.comboBox2.Location = new System.Drawing.Point(154, 347);
+            this.comboBox2.Location = new System.Drawing.Point(170, 404);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(89, 21);
             this.comboBox2.TabIndex = 66;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.homeToolStripMenuItem,
+            this.customersToolStripMenuItem,
+            this.productsToolStripMenuItem,
+            this.salesToolStripMenuItem,
+            this.employeeToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(966, 24);
+            this.menuStrip1.TabIndex = 67;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // homeToolStripMenuItem
+            // 
+            this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.homeToolStripMenuItem.Text = "Home";
+            this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
+            // 
+            // customersToolStripMenuItem
+            // 
+            this.customersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewCustomersToolStripMenuItem,
+            this.addNewCustomerToolStripMenuItem});
+            this.customersToolStripMenuItem.Name = "customersToolStripMenuItem";
+            this.customersToolStripMenuItem.Size = new System.Drawing.Size(76, 20);
+            this.customersToolStripMenuItem.Text = "Customers";
+            // 
+            // viewCustomersToolStripMenuItem
+            // 
+            this.viewCustomersToolStripMenuItem.Name = "viewCustomersToolStripMenuItem";
+            this.viewCustomersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewCustomersToolStripMenuItem.Text = "View Customers";
+            this.viewCustomersToolStripMenuItem.Click += new System.EventHandler(this.viewCustomersToolStripMenuItem_Click);
+            // 
+            // addNewCustomerToolStripMenuItem
+            // 
+            this.addNewCustomerToolStripMenuItem.Name = "addNewCustomerToolStripMenuItem";
+            this.addNewCustomerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addNewCustomerToolStripMenuItem.Text = "Add New Customer";
+            this.addNewCustomerToolStripMenuItem.Click += new System.EventHandler(this.addNewCustomerToolStripMenuItem_Click);
+            // 
+            // productsToolStripMenuItem
+            // 
+            this.productsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewProductsToolStripMenuItem});
+            this.productsToolStripMenuItem.Name = "productsToolStripMenuItem";
+            this.productsToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.productsToolStripMenuItem.Text = "Products";
+            // 
+            // viewProductsToolStripMenuItem
+            // 
+            this.viewProductsToolStripMenuItem.Name = "viewProductsToolStripMenuItem";
+            this.viewProductsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewProductsToolStripMenuItem.Text = "View Products";
+            this.viewProductsToolStripMenuItem.Click += new System.EventHandler(this.viewProductsToolStripMenuItem_Click_1);
+            // 
+            // salesToolStripMenuItem
+            // 
+            this.salesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewSalesToolStripMenuItem});
+            this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
+            this.salesToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
+            this.salesToolStripMenuItem.Text = "Sales";
+            // 
+            // viewSalesToolStripMenuItem
+            // 
+            this.viewSalesToolStripMenuItem.Name = "viewSalesToolStripMenuItem";
+            this.viewSalesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewSalesToolStripMenuItem.Text = "View Sales";
+            this.viewSalesToolStripMenuItem.Click += new System.EventHandler(this.viewSalesToolStripMenuItem_Click);
+            // 
+            // employeeToolStripMenuItem
+            // 
+            this.employeeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.viewEmployeesToolStripMenuItem,
+            this.addNewEmployeeToolStripMenuItem});
+            this.employeeToolStripMenuItem.Name = "employeeToolStripMenuItem";
+            this.employeeToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.employeeToolStripMenuItem.Text = "Employee";
+            // 
+            // viewEmployeesToolStripMenuItem
+            // 
+            this.viewEmployeesToolStripMenuItem.Name = "viewEmployeesToolStripMenuItem";
+            this.viewEmployeesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewEmployeesToolStripMenuItem.Text = "View Employees";
+            this.viewEmployeesToolStripMenuItem.Click += new System.EventHandler(this.viewEmployeesToolStripMenuItem_Click);
+            // 
+            // addNewEmployeeToolStripMenuItem
+            // 
+            this.addNewEmployeeToolStripMenuItem.Name = "addNewEmployeeToolStripMenuItem";
+            this.addNewEmployeeToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.addNewEmployeeToolStripMenuItem.Text = "Add New Employee";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(840, 9);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(43, 13);
+            this.label13.TabIndex = 68;
+            this.label13.Text = "Log out";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // AddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(966, 581);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.maskedTextBox2);
@@ -313,9 +435,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "AddEmployee";
             this.Text = "AddEmployee";
             ((System.ComponentModel.ISupportInitialize)(this.ist2akDataSet11)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -350,5 +476,18 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem homeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem customersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewCustomersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewCustomerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem productsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewProductsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewSalesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem employeeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewEmployeesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewEmployeeToolStripMenuItem;
+        private System.Windows.Forms.Label label13;
     }
 }

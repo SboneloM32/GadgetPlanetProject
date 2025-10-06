@@ -115,5 +115,70 @@ namespace projectDemo
                 MessageBox.Show("Deletion cancelled.");
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            DialogResult confirmLogout;
+
+            confirmLogout = MessageBox.Show("Are you sure you want log out?", "Confirm", MessageBoxButtons.YesNo);
+            if (confirmLogout == DialogResult.Yes)
+            {
+                Login login = new Login();
+                login.Show();
+                this.Hide();
+            }
+        }
+
+        private void addNewCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddCustomer newcustomer = new AddCustomer();
+            newcustomer.Show();
+            this.Hide();
+        }
+
+        private void viewSalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sales sales = new Sales();
+            sales.Show();
+            this.Hide();
+        }
+
+        private void vieCustomersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Customer customer = new Customer();
+            customer.Show();
+            this.Hide();
+        }
+
+        private void viewProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Products products = new Products(); 
+            products.Show();
+            this.Hide();
+        }
+
+        private void addNewEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddEmployee newemployee = new AddEmployee();    
+            newemployee.Show();
+            this.Hide();
+        }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomePage homepage = new HomePage();
+            homepage.Show();
+            this.Hide();
+        }
+
+        private void viewEmployeesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void employeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

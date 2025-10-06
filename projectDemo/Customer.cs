@@ -118,5 +118,59 @@ namespace projectDemo
             }
         }
 
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomePage homePage = new HomePage(); 
+            homePage.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            DialogResult confirmLogout;
+
+            confirmLogout = MessageBox.Show("Are you sure you want log out?", "Confirm", MessageBoxButtons.YesNo);
+            if (confirmLogout == DialogResult.Yes)
+            {
+                Login login = new Login();
+                login.Show();
+                this.Hide();
+            }
+        }
+
+        private void addNewCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddCustomer customer = new AddCustomer();   
+            customer.Show();
+            this.Hide();
+        }
+
+        private void viewProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Products products = new Products();
+            products.Show();    
+            this.Hide();    
+        }
+
+        private void viewSalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sales sales = new Sales();
+            sales.Show();   
+            this.Hide();    
+        }
+
+        private void viewEmployeesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Employee employees = new Employee();    
+            employees.Show();   
+            this.Hide();    
+        }
+
+        private void addNewEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddEmployee addEmployee = new AddEmployee();    
+            addEmployee.Show(); 
+            this.Hide();    
+        }
     }
 }

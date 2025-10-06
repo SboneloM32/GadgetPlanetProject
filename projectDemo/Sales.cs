@@ -91,5 +91,34 @@ namespace projectDemo
                 MessageBox.Show("Deletion cancelled.");
             }
         }
+
+        private void allProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            homePage.Show();
+            this.Hide();
+        }
+
+        private void viewCustomersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Customer customer = new Customer();
+            customer.Show();
+            this.Hide();
+        }
+
+        private void viewProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Products products = new Products();
+            products.Show();    
+            this.Hide();    
+        }
+
+        private void viewSalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sales sales = new Sales();  
+            sales.Show();   
+
+            this.Hide();    
+        }
     }
 }

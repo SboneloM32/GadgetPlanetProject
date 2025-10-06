@@ -173,5 +173,12 @@ namespace projectDemo
                 }
             }
         }
+
+        private void backToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
     }
 }

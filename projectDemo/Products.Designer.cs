@@ -1846,6 +1846,7 @@
             this.allProductsToolStripMenuItem.Name = "allProductsToolStripMenuItem";
             this.allProductsToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.allProductsToolStripMenuItem.Text = "Home";
+            this.allProductsToolStripMenuItem.Click += new System.EventHandler(this.allProductsToolStripMenuItem_Click);
             // 
             // addNewCustomerToolStripMenuItem
             // 
@@ -1855,18 +1856,19 @@
             this.addNewCustomerToolStripMenuItem.Name = "addNewCustomerToolStripMenuItem";
             this.addNewCustomerToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.addNewCustomerToolStripMenuItem.Text = " Customers";
+            this.addNewCustomerToolStripMenuItem.Click += new System.EventHandler(this.addNewCustomerToolStripMenuItem_Click);
             // 
             // viewCustomersToolStripMenuItem
             // 
             this.viewCustomersToolStripMenuItem.Name = "viewCustomersToolStripMenuItem";
-            this.viewCustomersToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.viewCustomersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewCustomersToolStripMenuItem.Text = "View Customers";
             this.viewCustomersToolStripMenuItem.Click += new System.EventHandler(this.viewCustomersToolStripMenuItem_Click);
             // 
             // addNewCustomerToolStripMenuItem1
             // 
             this.addNewCustomerToolStripMenuItem1.Name = "addNewCustomerToolStripMenuItem1";
-            this.addNewCustomerToolStripMenuItem1.Size = new System.Drawing.Size(176, 22);
+            this.addNewCustomerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.addNewCustomerToolStripMenuItem1.Text = "Add new Customer";
             this.addNewCustomerToolStripMenuItem1.Click += new System.EventHandler(this.addNewCustomerToolStripMenuItem1_Click);
             // 
@@ -1882,7 +1884,7 @@
             // viewProductsToolStripMenuItem
             // 
             this.viewProductsToolStripMenuItem.Name = "viewProductsToolStripMenuItem";
-            this.viewProductsToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.viewProductsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.viewProductsToolStripMenuItem.Text = "View Products";
             this.viewProductsToolStripMenuItem.Click += new System.EventHandler(this.viewProductsToolStripMenuItem_Click);
             // 

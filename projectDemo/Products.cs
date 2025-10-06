@@ -95,18 +95,12 @@ namespace projectDemo
 
         private void viewCustomersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Customer cs = new Customer();
-            this.Hide();
-            cs.Show();
-            ///
+         
         }
 
         private void viewSalesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Sales cs = new Sales();
-            this.Hide();
-            
-            cs.Show();
+           
         }
 
         private void Products_Load(object sender, EventArgs e)
@@ -410,21 +404,17 @@ namespace projectDemo
 
         private void viewEmployeesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Employee employee = new Employee();
-            employee.Show();
+            
         }
 
         private void addNewEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AddEmployee addEmployee = new AddEmployee();
-            addEmployee.Show();
+            
         }
 
         private void addNewCustomerToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            AddCustomer addCustomer = new AddCustomer();
-            this.Hide();
-            addCustomer.Show();
+           
         }
 
         private void addNewSaleToolStripMenuItem_Click(object sender, EventArgs e)
@@ -436,6 +426,19 @@ namespace projectDemo
         {
             BuyingProduct buyingProduct = new BuyingProduct();
             buyingProduct.Show();
+            this.Hide();
+        }
+
+        private void allProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            homePage.Show();
+            this.Hide();
+        }
+
+        private void addNewCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

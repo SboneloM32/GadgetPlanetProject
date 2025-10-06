@@ -90,5 +90,39 @@ namespace projectDemo
                 MessageBox.Show("Deletion cancelled.");
             }
         }
+
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HomePage homePage = new HomePage();
+            homePage.Show();
+            this.Hide();
+        }
+
+        private void viewCustomersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Customer customer = new Customer();
+            customer.Show();
+            this.Hide();
+        }
+
+        private void addNewCustomerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddCustomer customer = new AddCustomer();
+            customer.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            DialogResult confirmLogout;
+
+            confirmLogout = MessageBox.Show("Are you sure you want log out?", "Confirm", MessageBoxButtons.YesNo);
+            if (confirmLogout == DialogResult.Yes)
+            {
+                Login login = new Login();
+                login.Show();
+                this.Hide();
+            }
+        }
     }
 }
