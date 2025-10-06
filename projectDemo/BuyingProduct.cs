@@ -124,5 +124,35 @@ namespace projectDemo
                 this.Hide();
             }
         }
+
+        private void viewSalesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sales sales = new Sales();
+           
+            sales.Show();
+            this.Hide();
+        }
+
+        private void employeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Employee employee = new Employee();
+            employee.Show();
+            this.Hide();
+        }
+
+        private void addNewEmployeeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddEmployee employee = new AddEmployee();   
+
+            employee.Show();
+            this.Hide(); 
+        }
+
+        private void viewProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Products products = new Products();
+            products.Show();
+            this.Hide();
+        }
     }
 }
